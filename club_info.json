@@ -49,13 +49,6 @@
         "image": "biztech.png"
     },
     {
-        "name": "UX Hub",
-        "description": "UBC UX Hub is a community for students who want to explore or grow in user experience design, whether you're a complete beginner or already building projects. The club focuses on helping students gain practical skills through workshops, design challenges, mentorship, and team projects that feel close to real industry work. They also bring in designers and product professionals for panels and networking, which makes it easier to learn what UX careers actually look like. If you're considering joining, UX Hub is a place to meet other creative and tech-minded students, build a portfolio, and get experience that can help in internships or future design roles.",
-        "price": 10,
-        "contact": "https://www.instagram.com/ubcuxhub/%E2%80%9D",
-        "image": "uxhub.png"
-    },
-    {
         "name": "Japan Association",
         "description": "UBC Japan Association is a club centered around building a community around sharing and appreciating Japanese culture. We host events inspired by the cultural, social and sporting aspect of Japanese culture. We hold these events twice a month, and they are great opportunities to socialize, have fun, and learn about Japan. If you appreciate Japanese culture and are interested in having a good time, then we welcome you to join UBCJA! Knowing Japanese, or being Japanese is NOT required to join our community! See you at our next event ^_^",
         "price": 12,
@@ -110,13 +103,6 @@
         "price": 12,
         "contact": "https://www.instagram.com/msaubc/",
         "image": "muslim.png"
-    },
-    {
-        "name": "UBC Startups",
-        "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
-        "price": 0,
-        "contact": "https://www.instagram.com/ubcstartups/",
-        "image": "ubcstart.png"
     },
     {
         "name": "New Taiwanese Generation",
