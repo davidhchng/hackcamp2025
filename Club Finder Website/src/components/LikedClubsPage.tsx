@@ -240,7 +240,7 @@ export function LikedClubsPage() {
                                   {/* Instagram Contact */}
                                   {club.contact && (
                                     <motion.a
-                                      href={`https://instagram.com/${club.contact.replace('@', '')}`}
+                                      href={club.contact.startsWith('http') ? club.contact : `https://www.instagram.com/${club.contact.replace('@', '').replace('https://www.instagram.com/', '').replace('https://instagram.com/', '')}`}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transition-all"
@@ -253,7 +253,7 @@ export function LikedClubsPage() {
                                       </div>
                                       <div className="flex-1 text-left">
                                         <div className="text-xs text-white/90">Follow on Instagram</div>
-                                        <div className="font-medium">{club.contact}</div>
+                                        <div className="font-medium">{club.contact.replace('https://www.instagram.com/', '').replace('https://instagram.com/', '').replace('/', '')}</div>
                                       </div>
                                     </motion.a>
                                   )}
