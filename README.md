@@ -3,7 +3,7 @@
 
 
 <div align="center">
-  <h3>Discover your perfect club at UBC. Swipe your way to community.</h3>
+  <h3> Swipe your way to community. Find your perfect club. </h3>
   <p>Built with React, TypeScript, and AI-powered recommendations</p>
 </div>
 
@@ -178,7 +178,7 @@ The events database comes from and is updated with the UBC AMS Clubs Directory, 
 <img width="1198" height="600" alt="Screenshot 2025-11-16 at 10 46 52 AM" src="https://github.com/user-attachments/assets/0f7bf12d-b62b-43b8-82b0-810ca56fa17c" />
 
 
-### Event Filtering
+### Event Discovery Page
 - Filter by category: All Events, UBC Events, UBC Athletics, Club Events, Partying Events
 - Click RSVP buttons to register (opens in new tab)
 - View event details, dates, times, and pricing
