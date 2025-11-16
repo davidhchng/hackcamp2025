@@ -3,7 +3,8 @@
     "name": "Squash Club",
     "description": "Welcome to the UBC Squash Club! Founded this year in 2024, this is your gateway to a vibrant community of squash enthusiasts at the University of British Columbia. Whether you're a seasoned player or just picking up a racquet for the first time, our club offers a welcoming environment for all skill levels! Join us for our weekly drop-in sessions for club members, where you can sharpen your skills, meet fellow players, and enjoy the thrill of squash.",
     "price": 10,
-    "contact": "https://www.instagram.com/ubcsquash/"
+    "contact": "https://www.instagram.com/ubcsquash/",
+    "image": "Screenshot 2025-11-16 000003.png"
   },
   {
     "name": "Disc Golf Club",
@@ -298,6 +299,66 @@
     "description": "UBC AI Safety is a student-run initiative at the University of British Columbia dedicated to the study and practice of artificial intelligence safety. The group offers courses, policy reading groups, project opportunities, and a community space for students who want to explore how advanced AI systems might impact society and how to guide their safe development. Members learn about topics such as alignment, governance, risk assessment and work together on research or outreach aimed at making AI more beneficial and less harmful.",
     "price": 0,
     "contact": "https://www.instagram.com/ubcaisafety/%E2%80%9D"
+  },
+  {
+    "name": "Formula Electric",
+    "description": "The UBC Formula Electric team is a multidisciplinary student-led group at University of British Columbia that designs, builds, and races a fully electric open-wheel formula-style car. They aim to combine high performance with sustainability, giving students real engineering experience across mechanical, electrical, software, and business roles. The club welcomes students from a variety of backgrounds (not just engineering) and involves them in everything from battery systems and aerodynamics to project management and manufacturing logistics. Membership typically requires a significant time commitment each week and the team often competes in international events, which adds both challenge and prestige.",
+    "price": 0,
+    "contact": "https://www.instagram.com/ubcformulaelectric/?hl=en%E2%80%9D"
+  },
+  {
+    "name": "Taekwondo Club",
+    "description": "Whether you're a retired black belt, actively training for your next belt, have no idea what Taekwondo is, or are just looking for something fun between lectures, this is the club for you! As one of the largest martial arts clubs at UBC, we pride ourselves on building an inclusive and supportive community through the traditional Korean martial art of Taekwondo. Through our weekly classes, we aim to help you build a foundation in Taekwondo, self defence, and fitness, as well as foster a fun social environment to build lasting friendships. If you're looking to enter the world of Taekwondo, reconnect with it, or continue to further your journey, consider checking us out!",
+    "price": 12,
+    "contact": "https://www.instagram.com/ubctaekwondo/"
+  },
+  {
+    "name": "Formula Racing",
+    "description": "UBC Formula (Formula UBC) is a student engineering design team that builds a small, high-performance formula-style race car from the ground up each year and competes in the Formula SAE competitions. Students work in specialized subteams such as powertrain, chassis, suspension, aerodynamics, electronics, controls, and business operations. The team offers hands-on experience with design, manufacturing, testing, and project management, using tools and processes similar to those found in industry. Members learn how to take a complex engineering project from concept to competition while working in a fast-paced, collaborative environment.",
+    "price": 0,
+    "contact": "https://www.instagram.com/formula.ubc/?hl=en%E2%80%9D"
+  },
+  {
+    "name": "Barista Club",
+    "description": "AMS Barista Club's core goal is to create an open community for coffee enthusiasts, offering a platform for students to connect, learn, and explore the world of coffee in various ways. Despite the growing coffee industry in Vancouver and the keen interest of many students in coffee culture and cafe work, limited opportunities exist, often constrained by time, budget, and background limitations. To bridge this gap, our club aims to provide students easily accessible experiences that offer foundational knowledge and chances to learn diverse coffee-related skills, all without requiring employment at a cafe or paying for private lessons.",
+    "price": 8,
+    "contact": "https://www.instagram.com/ubcbaristaclub/?hl=en%E2%80%9D"
+  },
+  {
+    "name": "UBC Solar",
+    "description": "UBC Solar is a student engineering design team that builds and races solar-powered vehicles. Members work on everything from mechanical design and aerodynamics to electrical systems, battery design, solar arrays, software, and business operations. The team focuses on creating a fully functional, road-ready solar car for competitions, giving students hands-on experience with engineering tools, manufacturing, teamwork, and long-term project development. It is open to students from many faculties and provides a collaborative environment for anyone interested in sustainability, engineering design, or working on a large technical project.",
+    "price": 0,
+    "contact": "https://www.instagram.com/ubcsolar/?hl=en%E2%80%9D"
+  },
+  {
+    "name": "Canadian Wheelchair Club",
+    "description": "Welcome to the UBC Canadian Wheelchair Club! Our mission is to promote inclusivity, support, and empowerment for individuals with disabilities. As a community-driven organization, we aim to provide a space where members can connect, share experiences, and engage in activities that foster physical and social well-being. Our motto Helping the 100 Million refers to our ongoing efforts to support and better the lives of individuals facing significant challenges in access to mobility devices. It signifies our ambitious goal and collective commitment to positively impact the lives of over 100 million people worldwide who are neglected and marginalized due to disabilities. We believe that through our collective efforts, we can strive to create meaningful change and ensure these individuals can obtain the support and resources they need to thrive.",
+    "price": 0,
+    "contact": "https://www.instagram.com/ubcwheelchair/"
+  },
+  {
+    "name": "Submarine Design Team",
+    "description": "UBC Submarine Design Team (SUBC) is a student engineering group that designs and builds a human-powered submarine for international competitions. Members work on mechanical design, hull construction, propulsion systems, controls, safety features, and overall project logistics. The team gives students practical experience with engineering tools and manufacturing while working toward creating a functional sub that can be piloted underwater. It brings together students from many disciplines and offers a collaborative environment for anyone interested in marine engineering or large technical design projects.",
+    "price": 0,
+    "contact": "https://www.instagram.com/subc_ubc/%E2%80%9D"
+  },
+  {
+    "name": "Music Production Club",
+    "description": "Our mission is to provide a supportive and creative environment where music enthusiasts can explore, develop, and refine their musical talents. We aim to serve as an entry point for students interested in music production by offering a range of comprehensive educational classes, workshops, and resources designed to enhance their technical skills and knowledge. We strive to foster a vibrant and inclusive community where members can connect, share ideas, and collaborate on musical projects, promoting creativity and artistic expression. Additionally, we advocate for the interests and passions of music lovers within the university, representing their voices in interactions with university organizations and contributing to the broader cultural and artistic landscape of our institution.",
+    "price": 5,
+    "contact": "https://www.instagram.com/mpc_ubc/"
+  },
+  {
+    "name": "Formula 1 Club",
+    "description": "The AMS F1 Club at UBC is a student club at UBC for fans of Formula 1 and motorsport. The club organizes events such as watch parties for Grand Prix races, sim-racing leagues, go-kart outings, and social gatherings to connect students who enjoy racing and automotive culture. Membership is open to anyone curious about F1, whether you're a long-time fan or just want a fun way to watch races with others.",
+    "price": 15,
+    "contact": "https://www.instagram.com/ubcf1club/?hl=en%E2%80%9D"
+  },
+  {
+    "name": "Poker Club",
+    "description": "Building a fun, inclusive community, while spreading the game of poker to all students.",
+    "price": 5,
+    "contact": "https://www.instagram.com/ubcpokerclub/"
   }
 
 ]
