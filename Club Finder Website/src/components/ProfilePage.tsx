@@ -28,6 +28,7 @@ interface ProfileData {
   major: string;
   bio: string;
   lookingFor: string;
+  genderPronouns?: string;
 }
 
 const majors = [
@@ -169,6 +170,7 @@ export function ProfilePage() {
     major: "",
     bio: "",
     lookingFor: "",
+    genderPronouns: "",
   });
   const [isSaved, setIsSaved] = useState(false);
   const [open, setOpen] = useState(false);
@@ -278,6 +280,36 @@ export function ProfilePage() {
                       setProfile({ ...profile, bio: e.target.value })
                     }
                     className="min-h-[100px] resize-none border-gray-200 focus:border-blue-500 focus:ring-blue-500"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          {/* Gender Pronouns Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+          >
+            <Card className="border-gray-100 shadow-md hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex items-center gap-2">
+                  <User className="w-5 h-5 text-blue-600" />
+                  <h3 className="text-gray-900">Gender Pronouns</h3>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="genderPronouns" className="text-gray-700">
+                    Pronouns <span className="text-gray-400 text-sm">(optional)</span>
+                  </Label>
+                  <Input
+                    id="genderPronouns"
+                    placeholder="e.g., she/her, he/him, they/them, or any pronouns"
+                    value={profile.genderPronouns || ""}
+                    onChange={(e) =>
+                      setProfile({ ...profile, genderPronouns: e.target.value })
+                    }
+                    className="border-gray-200 focus:border-blue-500 focus:ring-blue-500"
                   />
                 </div>
               </CardContent>
@@ -556,7 +588,7 @@ export function ProfilePage() {
           </motion.div>
 
           {/* Preview Section */}
-          {(profile.bio || profile.major || profile.adjectives.some(a => a.trim()) || profile.passions.some(p => p.trim())) && (
+          {(profile.bio || profile.major || profile.adjectives.some(a => a.trim()) || profile.passions.some(p => p.trim()) || profile.genderPronouns) && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -573,6 +605,13 @@ export function ProfilePage() {
                     <div className="space-y-1">
                       <p className="text-sm text-gray-600">Bio</p>
                       <p className="text-gray-900">{profile.bio}</p>
+                    </div>
+                  )}
+
+                  {profile.genderPronouns && (
+                    <div className="space-y-1">
+                      <p className="text-sm text-gray-600">Pronouns</p>
+                      <p className="text-gray-900">{profile.genderPronouns}</p>
                     </div>
                   )}
 

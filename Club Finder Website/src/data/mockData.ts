@@ -1,97 +1,159 @@
 import { Club, Event } from "../types";
+import clubInfoData from "./club_info.json";
 
-export const clubs: Club[] = [
-  {
-    id: "1",
-    name: "Soccer Club",
-    image: "https://images.unsplash.com/photo-1721441904808-6f2c4c116d2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjB0ZWFtJTIwdW5pdmVyc2l0eXxlbnwxfHx8fDE3NjMyNjMyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Join our competitive soccer team. Practice twice a week and compete in regional tournaments.",
-    type: "Sports",
-    location: "Main Field",
-    vibe: ["Active", "Team Sports", "Competitive"],
-    rating: 4.8,
-    members: 45,
-    meetingTime: "Tuesdays & Thursdays, 4:00 PM - 6:00 PM",
-    contact: "soccer@ubc.ca",
-    details: "We're a dedicated group of soccer enthusiasts competing in the UBC Intramural League. Whether you're a seasoned player or just getting started, we welcome all skill levels. Join us for practices, friendly matches, and tournament competitions throughout the year.",
-    price: "$25/term"
-  },
-  {
-    id: "2",
-    name: "Debate Society",
-    image: "https://images.unsplash.com/photo-1745078535555-05d259fe826f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWJhdGUlMjBjbHViJTIwc3R1ZGVudHN8ZW58MXx8fHwxNzYzMjYzMjMyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Sharpen your public speaking and critical thinking skills through weekly debates and competitions.",
-    type: "Academic",
-    location: "Student Center",
-    vibe: ["Intellectual", "Public Speaking", "Leadership"],
-    rating: 4.7,
-    members: 32,
-    meetingTime: "Wednesdays, 6:00 PM - 8:00 PM",
-    contact: "debate@ubc.ca",
-    details: "Build confidence in public speaking while engaging with current events and philosophical questions. We host weekly practice debates, attend regional competitions, and provide mentorship for newcomers. Perfect for aspiring lawyers, politicians, or anyone wanting to improve their argumentation skills.",
-    price: "Free"
-  },
-  {
-    id: "3",
-    name: "Robotics Team",
-    image: "https://images.unsplash.com/photo-1614492898637-435e0f87cef8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMGVuZ2luZWVyaW5nJTIwc3R1ZGVudHN8ZW58MXx8fHwxNzYzMjYzMjMyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Design, build, and program robots for national competitions. Perfect for engineering enthusiasts.",
-    type: "STEM",
-    location: "Engineering Lab",
-    vibe: ["Technical", "Innovation", "Hands-on"],
-    rating: 4.9,
-    members: 28,
-    meetingTime: "Mondays & Fridays, 5:00 PM - 7:00 PM",
-    contact: "robotics@ubc.ca",
-    details: "Join UBC's award-winning robotics team! We design and build competition robots, participate in international competitions, and collaborate on innovative projects. Great opportunity to gain hands-on experience with mechanical design, electrical systems, and programming.",
-    price: "$50/term"
-  },
-  {
-    id: "4",
-    name: "Drama Club",
-    image: "https://images.unsplash.com/photo-1630050525402-06c617847d27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFtYSUyMHRoZWF0cmUlMjBzdHVkZW50c3xlbnwxfHx8fDE3NjMyNjMyMzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Perform in theatrical productions and develop your acting skills. Open to all experience levels.",
-    type: "Arts",
-    location: "Theatre Building",
-    vibe: ["Creative", "Performance", "Expressive"],
-    rating: 4.6,
-    members: 38,
-    meetingTime: "Thursdays, 7:00 PM - 9:00 PM",
-    contact: "drama@ubc.ca",
-    details: "Express yourself through the art of theatre! We produce 3 major shows per year and host weekly acting workshops. Whether you're interested in acting, directing, stage management, or set design, there's a role for everyone. No experience necessary!",
-    price: "Free"
-  },
-  {
-    id: "5",
-    name: "Photography Society",
-    image: "https://images.unsplash.com/photo-1725353568651-562163a5e3fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMGNsdWJ8ZW58MXx8fHwxNzYzMjYzMjMzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Explore photography techniques, go on photo walks, and showcase your work in our annual exhibition.",
-    type: "Arts",
-    location: "Arts Building",
-    vibe: ["Creative", "Visual Arts", "Social"],
-    rating: 4.5,
-    members: 52,
-    meetingTime: "Saturdays, 10:00 AM - 12:00 PM",
-    contact: "photo@ubc.ca",
-    details: "Capture the world through your lens! We organize weekly photo walks, technique workshops, and critique sessions. Our annual exhibition showcases member work to the entire campus. All camera types welcome - phone, DSLR, film, or mirrorless!",
-    price: "$15/term"
-  },
-  {
-    id: "6",
-    name: "Community Service",
-    image: "https://images.unsplash.com/photo-1751666526244-40239a251eae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXIlMjBjb21tdW5pdHklMjBzZXJ2aWNlfGVufDF8fHx8MTc2MzIyNDk2Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Make a difference in the local community through volunteering and outreach programs.",
-    type: "Service",
-    location: "Various Locations",
-    vibe: ["Volunteering", "Impact", "Community"],
-    rating: 4.8,
-    members: 67,
-    meetingTime: "Flexible scheduling",
-    contact: "service@ubc.ca",
-    details: "Make a real impact in Vancouver! We partner with local nonprofits, food banks, and community centers. Choose from weekly commitments or one-off events. Great way to give back while building your resume and meeting passionate people.",
-    price: "Free"
+// Helper function to determine club type based on name and description
+function getClubType(name: string, description: string): string {
+  const lowerName = name.toLowerCase();
+  const lowerDesc = description.toLowerCase();
+  
+  if (lowerName.includes("squash") || lowerName.includes("disc golf") || lowerName.includes("sport")) {
+    return "Sports";
   }
-];
+  if (lowerName.includes("statistics") || lowerName.includes("data") || lowerName.includes("ai") || 
+      lowerName.includes("stem") || lowerName.includes("tech") || lowerName.includes("engineering") ||
+      lowerName.includes("launch pad") || lowerName.includes("robotics")) {
+    return "STEM";
+  }
+  if (lowerName.includes("chinese") || lowerName.includes("hong kong") || lowerName.includes("japan") ||
+      lowerName.includes("taiwanese") || lowerName.includes("persian") || lowerName.includes("singapore") ||
+      lowerName.includes("korean") || lowerName.includes("jewish") || lowerName.includes("muslim")) {
+    return "Culture";
+  }
+  if (lowerName.includes("finance") || lowerName.includes("business") || lowerName.includes("biztech") ||
+      lowerName.includes("startup") || lowerName.includes("career")) {
+    return "Business";
+  }
+  if (lowerName.includes("research") || lowerName.includes("academic") || lowerName.includes("uro")) {
+    return "Academic";
+  }
+  return "General";
+}
+
+// Helper function to generate location
+function getLocation(type: string): string {
+  const locations: Record<string, string> = {
+    "Sports": "UBC Recreation Center",
+    "STEM": "Engineering Building",
+    "Culture": "Student Center",
+    "Business": "Sauder School of Business",
+    "Academic": "Main Library",
+    "General": "Student Center"
+  };
+  return locations[type] || "Student Center";
+}
+
+// Helper function to generate vibe tags
+function getVibeTags(name: string, description: string, type: string): string[] {
+  const tags: string[] = [];
+  const lowerDesc = description.toLowerCase();
+  
+  if (type === "Sports") {
+    tags.push("Active", "Fitness");
+  } else if (type === "STEM") {
+    tags.push("Technical", "Innovation");
+  } else if (type === "Culture") {
+    tags.push("Cultural", "Community");
+  } else if (type === "Business") {
+    tags.push("Professional", "Networking");
+  } else if (type === "Academic") {
+    tags.push("Intellectual", "Academic");
+  }
+  
+  if (lowerDesc.includes("social") || lowerDesc.includes("community") || lowerDesc.includes("friends")) {
+    tags.push("Social");
+  }
+  if (lowerDesc.includes("workshop") || lowerDesc.includes("learn") || lowerDesc.includes("skill")) {
+    tags.push("Educational");
+  }
+  if (lowerDesc.includes("competition") || lowerDesc.includes("competitive")) {
+    tags.push("Competitive");
+  }
+  if (lowerDesc.includes("beginner") || lowerDesc.includes("welcome") || lowerDesc.includes("all levels")) {
+    tags.push("Beginner-Friendly");
+  }
+  
+  return tags.length > 0 ? tags : ["Community", "Social"];
+}
+
+// Helper function to generate image URL based on club name
+function getImageUrl(name: string, type: string): string {
+  const imageMap: Record<string, string> = {
+    "Squash Club": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop",
+    "Disc Golf Club": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
+    "Undergraduate Statistics Society": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "Chinese Students Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "Stem Fellowship": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop",
+    "nwPlus": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
+    "Hong Kong YOURS Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "BizTech": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    "UX Hub": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=600&fit=crop",
+    "Japan Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "BOLT": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "Japan Career Network": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    "AI CLUB": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+    "Jewish Students Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "Data Science Club": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "Finance Association": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    "Muslim Students Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "UBC Startups": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    "New Taiwanese Generation": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "eProjects": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    "Persian Club": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "Undergraduate Research Opportunities": "https://images.unsplash.com/photo-1532619675605-1ede6c4ed2b8?w=800&h=600&fit=crop",
+    "Singapore Students Association": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "Launch Pad": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
+    "K-WAVE": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
+    "Women in Data Science": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+  };
+  
+  return imageMap[name] || `https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop`;
+}
+
+// Convert JSON data to Club format
+function convertToClubs(jsonData: any[]): Club[] {
+  // Filter out invalid entries and duplicates
+  const seen = new Set<string>();
+  const validClubs = jsonData.filter(club => {
+    if (!club.name || club.name === "1" || !club.description || club.description === "1") {
+      return false;
+    }
+    if (seen.has(club.name)) {
+      return false; // Skip duplicates
+    }
+    seen.add(club.name);
+    return true;
+  });
+  
+  return validClubs.map((club, index) => {
+      const type = getClubType(club.name, club.description);
+      const location = getLocation(type);
+      const vibe = getVibeTags(club.name, club.description, type);
+      const priceStr = club.price === 0 ? "Free" : `$${club.price}/year`;
+      
+      // Generate random but consistent rating and members
+      const seed = club.name.length + index;
+      const rating = 4.3 + (seed % 7) * 0.1; // 4.3 to 4.9
+      const members = 20 + (seed % 80); // 20 to 100
+      
+      return {
+        id: `club-${index + 1}`,
+        name: club.name,
+        image: getImageUrl(club.name, type),
+        description: club.description.substring(0, 150) + (club.description.length > 150 ? "..." : ""),
+        type,
+        location,
+        vibe,
+        rating: Math.round(rating * 10) / 10,
+        members,
+        meetingTime: "Check Instagram for schedule",
+        contact: club.contact || "Contact via Instagram",
+        details: club.description,
+        price: priceStr
+      };
+    });
+}
+
+export const clubs: Club[] = convertToClubs(clubInfoData);
 
 export const events: Event[] = [
   {
