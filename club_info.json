@@ -1,364 +1,429 @@
 [
-  {
-    "name": "Squash Club",
-    "description": "Welcome to the UBC Squash Club! Founded this year in 2024, this is your gateway to a vibrant community of squash enthusiasts at the University of British Columbia. Whether you're a seasoned player or just picking up a racquet for the first time, our club offers a welcoming environment for all skill levels! Join us for our weekly drop-in sessions for club members, where you can sharpen your skills, meet fellow players, and enjoy the thrill of squash.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcsquash/",
-    "image": "Screenshot 2025-11-16 000003.png"
-  },
-  {
-    "name": "Disc Golf Club",
-    "description": "Welcome to the AMS Disc Golf Club at UBC! We're all about building a vibrant, community-focused group where fun, friendship, and physical well-being come together. Our club is the perfect place for students to unwind, enjoy disc golf, and make new connections. Whether you're a beginner eager to learn or an advanced player looking to compete at the highest level, we have got something for you! Join us for a mix of casual and competitive events, embrace the beauty of Vancouver’s parks, and connect with fellow students in a welcoming and supportive environment.",
-    "price": 5,
-    "contact": "https://www.instagram.com/ubcdiscgolf/"
-  },
-  {
-    "name": "Undergraduate Statistics Society",
-    "description": "The UBC Undergraduate Statistics Society (USS) is a student-run club that builds community among students interested in statistics and data science. Supported by the UBC Statistics Department, the society hosts workshops, course review sessions, career panels, and social events to help students strengthen technical skills, connect with peers, and explore academic or industry pathways in analytics. USS also creates spaces for networking with professors, alumni, and industry professionals, while organizing casual socials that make the stats community more welcoming and collaborative. Overall, the club aims to support students academically, professionally, and socially throughout their statistics or data-science journey at UBC.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubc.uss/"
-  },
-  {
-    "name": "Chinese Students Association",
-    "description": "Established in 1956, the Chinese Students Association (CSA) is the first and longest-standing Chinese student club at UBC. As a non-profit organization, CSA is dedicated to building a vibrant community centred around a passion for Chinese culture. Our mission is to foster connections and friendships among UBC students by showcasing the richness of Chinese heritage through a variety of inclusive sports, cultural, and social events. For 60 years, CSA has established trust and recognition with its community through lasting partnerships with both local and international organizations. Moreover, CSA members enjoy numerous discounts sponsored by partners in the greater Vancouver area. We motivate our members to be engaged in the community and become well-rounded individuals. Our club is inclusive and welcoming to applicants of all experience levels and backgrounds. ",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubccsa/"
-  },
-  {
-    "name": "Stem Fellowship",
-    "description": "STEM Fellowship is a student-run, national organization that provides a platform for students interested in STEM fields to connect with one another and with professionals, engage in research and improve skills in scholarly writing. We seek to enable students to learn collaboratively, express their passion and love for science, and expand the scope of human knowledge through scientific, multidisciplinary inquiry. It involves research opportunities, mentorship opportunities, and chances to work with a team in STEM based ventures.",
-    "price": 2,
-    "contact": "https://www.instagram.com/ubcstemfellowship/"
-  },
-  {
-    "name": "nwPlus",
-    "description": "nwPlus is a student-led club supporting aspiring programmers and designers, based out of University of British Columbia. Our mission is to foster innovation and creativity in tech for students to connect with passionate peers and mentors, through events such as our annual hackathons. By providing the right tools, resources, and support, the team at nwPlus aims to encourage students to gain hands-on experience with cutting-edge technology outside of classroom settings.",
-    "price": 0,
-    "contact": "https://www.instagram.com/nwplusubc/"
-  },
-  {
-    "name": "Hong Kong YOURS Association",
-    "description": "Established in 1997, Hong Kong YOURS Association a subsidiary of the AMS @ the University of British Columbia. Through various social events across the school year, we aim to create a “home away from home” for students from a Hong Kong background. Although many of our members are born and/or raised in Hong Kong, we are a multicultural club and you will find diversity both in our members and in the events that we hold.",
-    "price": 15,
-    "contact": "https://www.instagram.com/ubchkyours/"
-  },
-  {
-    "name": "BizTech",
-    "description": "UBC BizTech is one of the largest student-run technology clubs at the University of British Columbia, founded in 2007 (originally as the Business Technology Network) and now welcoming students from all majors who are interested in the intersection of business and tech. They host immersive experiences like hackathons, conferences, workshops and networking nights. Designed to build skills, create meaningful industry connections, and foster a community of tech-enthusiastic students.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcbiztech/%E2%80%9D"
-  },
-  {
-    "name": "UX Hub",
-    "description": "UBC UX Hub is a community for students who want to explore or grow in user experience design, whether you're a complete beginner or already building projects. The club focuses on helping students gain practical skills through workshops, design challenges, mentorship, and team projects that feel close to real industry work. They also bring in designers and product professionals for panels and networking, which makes it easier to learn what UX careers actually look like. If you're considering joining, UX Hub is a place to meet other creative and tech-minded students, build a portfolio, and get experience that can help in internships or future design roles.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcuxhub/%E2%80%9D"
-  },
-  {
-    "name": "Japan Association",
-    "description": "UBC Japan Association is a club centered around building a community around sharing and appreciating Japanese culture. We host events inspired by the cultural, social and sporting aspect of Japanese culture. We hold these events twice a month, and they are great opportunities to socialize, have fun, and learn about Japan. If you appreciate Japanese culture and are interested in having a good time, then we welcome you to join UBCJA! Knowing Japanese, or being Japanese is NOT required to join our community! See you at our next event ^_^",
-    "price": 12,
-    "contact": "https://www.instagram.com/ubc_ja/"
-  },
-  {
-    "name": "BOLT",
-    "description": "BOLT UBC is the largest business and data analytics club on the UBC Vancouver campus and it welcomes students from all majors who want to build practical analytics skills and connect with the analytics community. They offer beginner-friendly workshops covering tools like SQL, Excel, and data visualization, team-based case competitions where you tackle real business problems, and networking events where you meet industry professionals and alumni working in the analytics field. If you’re looking to add hands-on data experience, bolster your resume, meet peers who share your interests in data/tech, and explore analytics pathways beyond coursework, BOLT UBC is the place for you.",
-    "price": 10,
-    "contact": "https://www.instagram.com/bolt.ubc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Japan Career Network",
-    "description": "The UBC Japan Career Network (JCN) is a student-run club with a mission to support all those who envision a future career in Japan or in the Nikkei Industry. Founded in 2013, we have supported international students, exchange students, and domestic students for over a decade.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubc.jcn/"
-  },
-  {
-    "name": "AI CLUB",
-    "description": "At the forefront of AI transformation, the UBC AI Club is dedicated to driving innovation, democratizing cutting-edge AI knowledge for all students, and forging strong, collaborative partnerships. We are on a mission to establish UBC as Canadas leading hub for AI education and development.",
-    "price": 3,
-    "contact": "https://www.instagram.com/ubcaiclub/"
-  },
-  {
-    "name": "Jewish Students Association",
-    "description": "The JSA strives to provide fun and inclusive social, cultural, and educational programming for all Jewish students of Vancouver's Jewish university community. We hope to provide a space for students to connect with Judaism through cultural events and educational projects on campus. The JSA strives to be open to a complete spectrum of Jewish students' opinions and hopes to liaise with any organization that promotes all UBC students' multicultural interests. We strive to promote safety and security to every Jewish student on campus and stand up against antisemitism.",
-    "price": 8,
-    "contact": "https://www.instagram.com/ubc.jsa/"
-  },
-  {
-    "name": "Data Science Club",
-    "description": "The Data Science club brings together students who are interested in data science, machine learning, programming, statistics or analytics and offers a mix of workshops, team-projects and networking events. They host sessions where you can build skills in languages or tools used in data science, join project teams to apply those skills in real problems, and attend meet-ups where you connect with other students and professionals working in data and tech. If you are looking to explore data science beyond your courses, the DSCI Club provides a space to learn, collaborate and network.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcdsci/"
-  },
-  {
-    "name": "Finance Association",
-    "description": "The UBC Finance Association is a student club that helps students learn about the finance industry and build skills relevant to careers like investment banking, asset management, corporate finance, and financial analysis. The club runs workshops, speaker panels, networking nights, and case competitions that let students apply concepts such as valuation or market analysis in practical settings. It is open to students from any faculty and creates a space to meet peers with similar interests, connect with professionals, and gain exposure to different areas of finance.",
-    "price": 15,
-    "contact": "https://www.instagram.com/ubc.fa/"
-  },
-  {
-    "name": "Muslim Students Association",
-    "description": "Welcome to the Muslim Students Association of UBC, MSA UBC, your home away from home! Whether you are looking for a community, spiritual growth, or just a place to unwind, we are here for you. As the main Muslim club and representative of Islam on campus, we offer a variety of events, from enlightening Islamic talks to fun recreational activities. At MSA UBC, we aim to serve Allah SWT by supporting Muslim students, building bridges with the wider community, and sharing the beauty of Islam with people from all walks of life. Guided by the Qur’an, Sunnah, and the wisdom of our scholars, we are dedicated to fulfilling our purpose of worshiping Allah SWT. Join us and be part of a vibrant, welcoming community!",
-    "price": 12,
-    "contact": "https://www.instagram.com/msaubc/"
-  },
-  {
-    "name": "UBC Startups",
-    "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcstartups/"
-  },
-  {
-    "name": "New Taiwanese Generation",
-    "description": "New Taiwanese Generation is one of the established Taiwanese clubs at UBC. We are a half cultural / half social club, seeking to bring Taiwanese culture to our UBC campus and pushing to break social barriers between individuals. New Taiwanese Generation (NTG) is a Taiwanese cultural club located at the University of British Columbia - Vancouver campus. NTG has been operated by student volunteers and has attracted more than 1000 members since it was established in 1998. At NTG, we strive to help students adjust to university life, make meaningful relationships, and create memorable experiences.",
-    "price": 15,
-    "contact": "https://www.instagram.com/ubcntg/"
-  },
-  {
-    "name": "eProjects",
-    "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
-    "price": 10,
-    "contact": "https://www.instagram.com/eprojectsubc/"
-  },
-  {
-    "name": "Persian Club",
-    "description": "Established in 1989, UBC Persian Club is a non-profit student organization at the University of British Columbia. We dedicate ourselves to bringing together diverse elements of the Iranian community, through our social gatherings, and empowering Iranian UBC students through the facilitation of cultural events and professional projects. UBC Persian Club is a non-religious and non-political student organization.",
-    "price": 12,
-    "contact": "https://www.instagram.com/ubcpc/"
-  },
-  {
-    "name": "Undergraduate Research Opportunities",
-    "description": "URO is a student-run club that helps undergraduates access and succeed in research across all disciplines. It offers mentorship through programs like REX (Research Experience), hosts events such as research fairs and poster sessions, and connects students with supervisors, labs, and publishing opportunities. Whether you’re just curious about research or ready to join a project, URO provides structured steps — peer support, workshops, and networking — to help you get involved and build your research portfolio",
-    "price": 10,
-    "contact": "https://www.instagram.com/uro_ubc/%E2%80%9D"
-  },
-  {
-    "name": "Singapore Students Association",
-    "description": "The UBC Singapore Students Association is a sociocultural club at the University of British Columbia (Vancouver) that is comprised of Singaporeans and UBC students interested in Singaporean culture. As a club, we strive to build a strong, lasting and welcoming community. Throughout the school year, we seek to foster friendships among our members, provide a support base for Singaporean students, and offer our members various unique opportunities and experiences. Our members are from all over the world and from all walks of life, and we welcome anyone and everyone to be a part of our community!",
-    "price": 10,
-    "contact": "https://www.instagram.com/theubcssa/"
-  },
-  {
-    "name": "Launch Pad",
-    "description": "UBC Launch Pad (at University of British Columbia) is a student-run software engineering club where members work in teams to build real software projects over the course of a semester. They recruit developers, designers, and strategists, form small project teams, and apply industry-standard tools and workflows — so you can build something concrete for your portfolio while collaborating with peers. Their projects deal with everything from web apps to mobile and backend systems, and they welcome students from all majors (not just computer science).",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubclaunchpad/?hl=en"
-  },
-  {
-    "name": "K-WAVE",
-    "description": " K-Wave is UBC's first and only Korean entertainment club open to anyone interested in Korean culture. Located at University of British Columbia's Vancouver campus, K-Wave was founded in Spring 2012. Since its founding, the club has provided various events year-round, open to both members and non-members.",
-    "price": 13,
-    "contact": "https://www.instagram.com/ubckwave/"
-  },
-  {
-    "name": "Women in Data Science",
-    "description": "WiDS@UBC is a student-led club at the University of British Columbia that focuses on creating a welcoming, diverse space for students—especially women and underrepresented genders—who are interested in data science, analytics, and technology. The club offers hands-on workshops (e.g., in Python, R, data visualization), case competitions, mock interviews, and networking events to help members build real skills and connect with peers and industry professionals. Whether you’re just curious about data or already working on analytics projects, WiDS@UBC gives you opportunities to learn, meet others with similar ambitions, and gain exposure to what a data-science career could look like.",
-    "price": 0,
-    "contact": "https://www.instagram.com/widsubc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Vietnamese Student Association",
-    "description": "We are a group of students looking to make VSA a home base not only for Vietnamese students but for all UBC students. We love to share Vietnam's delicious foods, trendy fashion, music, and more with the community! In addition, one of our biggest goals is to connect students together by providing opportunities to make friends, join a network, and most importantly, a family. If you are also ham chơi and love to help create a lifetime of fun memories with us, you have found the right place! Do not worry, we are also ham học --- we are a whole package that supports our students academic, social, and cultural journeys.",
-    "price": 12,
-    "contact": "https://www.instagram.com/ubcvsa/?hl=en"
-  },
-  {
-    "name": "Women in Computer Science",
-    "description": "WiCS (Women in Computer Science) at UBC is a student group that supports women and gender-diverse students interested in computing. The club focuses on building community, offering mentorship, and creating opportunities for students to grow their technical and professional skills. They run workshops, study sessions, networking events, speaker panels, and outreach programs that help members explore computer science in a supportive environment. WiCS also works to make the broader CS community more inclusive and encourages students at all levels to connect, collaborate, and gain confidence in their technical journeys.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcwics/%E2%80%9D"
-  },
-  {
-    "name": "Product Management Club",
-    "description": "UBC Product Management Club (PMC) is a student-run club at University of British Columbia that supports students interested in product management. The club provides workshops on frameworks like product discovery and go-to-market strategy, hosts hackathon-style competitions where teams build product solutions, and arranges networking sessions with industry professionals. PMC welcomes students from any discipline and aims to help members develop the mindset and skills needed for roles in product design, strategy, and development.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcpmc/%E2%80%9D"
-  },
-  {
-    "name": "BizChina Club",
-    "description": "UBC BizChina is a club founded in 2011 that focuses on hosting large-scale conferences, networking events and corporate presentations to benefit all students. We aim to bridge the gap between China and Canada where students ambitions in a career related to China and Sino-Canadian business can be developed.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcbizchina/"
-  },
-  {
-    "name": "Chinese Varsity Club",
-    "description": "Join UBC's largest social club, which offers tons of events, such as parties, bunny yoga, karaoke, talent shows, trips to Mexico, and more! With 11 departments, there will always be something for you. CVC embodies the idea of work hard, party harder, so if you crave fun socials outside of school or want to make lots of new friends, join us for this crazy year", 
-    "price": 15,
-    "contact": "https://www.instagram.com/ubc.cvc/?hl=en"
-  },
-  {
-    "name": "Marketing Association",
-    "description": "UBC Marketing Association (UBCMA) is a student-led club at the University of British Columbia focused on marketing education, engagement, and execution. It welcomes students from all faculties and hosts a range of events including networking socials, case competitions, a major conference, and company showcases. The club aims to equip students with practical marketing skills, build industry connections, and provide chances to apply what they learn in real-world contexts.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcma/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Italian Student Association",
-    "description": "Hey everyone! Welcome to the Italian Student Association! We strive to represent Italians and the Italian culture in the UBC community. We would be thrilled to have you on board for one of our meetings, events or just for a chat! There are no language nor nationality barriers, everyone is welcome!",
-    "price": 10,
-    "contact": "https://amsclubs.ca/italian-student-association/"
-  },
-  {
-    "name": "Ski and Board",
-    "description": "UBC Ski and Board is a student club for anyone interested in skiing or snowboarding, from beginners to advanced riders. The club organizes group trips to mountains throughout the winter, often handling transportation and planning so members can focus on enjoying the slopes. They also run social events on campus, offer gear-related tips, and help students meet others who share an interest in snow sports. It is a relaxed, community-focused club that makes it easy for students to explore skiing and snowboarding while connecting with people who enjoy the same activities.",
-    "price": 20,
-    "contact": "https://www.instagram.com/ubcskiandboard/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Actuarial Sciences Club",
-    "description": "The Actuarial Science Club @ UBC brings together students at UBC who are interested in pursuing actuarial careers. The club focuses on networking, exam preparation support (for exams like SOA P/FM), and building a community of peers preparing for roles in insurance, risk, and financial modelling. It's a resource for students who want to demystify the actuarial path and connect with others who share that goal.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubc_asc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Taiwan Association",
-    "description": "UBCTA (Taiwan Association) is a cultural club and beyond. Our Philosophy is to be Taiwanese (and more) students second home. For this, we hold events monthly starting in July, in Taiwan, also with North America International Student Alliance in Taiwan. Through this, we provide assistance for international Taiwanese students coming to BC and make them feel less alone before stepping on the journey of studying abroad. In UBC, we collaborate with other cultural clubs, and aim to promote Asian culture together.",
-    "price": 12,
-    "contact": "https://www.instagram.com/ubcta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
-  },
-  {
-    "name": "Accounting Club",
-    "description": "UBC Accounting Club is a student organization at the Sauder School of Business, University of British Columbia that supports students interested in accounting and related fields. The club offers networking events with accounting firms, information sessions about career paths and designations, social gatherings, and workshops that help members build professional skills. It emphasizes community among students and connections with industry professionals, helping members explore accounting careers and prepare for recruitment processes.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcaccounting/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Sauder Health and Wealthness",
-    "description": "Sauder Health & Wellness (HeWe) is a student-led service within the Commerce Undergraduate Society at UBC Sauder School of Business that focuses on supporting the mental and physical wellbeing of business students. The group organizes free communal meals, wellness workshops, mental-health awareness campaigns, and peer-support resources. They also maintain a curated list of campus-wide services and digital tools aimed at stress management, peer connection, and healthy habits. If you’re studying business at UBC and want to connect with fellow students around wellness and self-care, this team offers a friendly, no-pressure space for that.",
-    "price": 0,
-    "contact": "https://www.instagram.com/sauderhewe/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Association of Korean Canadian Scientists and Engineers",
-    "description": "Our chapters goal is to strengthen the Korean Canadian community within UBC by hosting innovative and welcoming academic and social events, supported by our close-knit executive team. We welcome students from all backgrounds and look forward to meeting all of you!",
-    "price": 10,
-    "contact": "https://www.instagram.com/akcse_ubc/"
-  },
-  {
-    "name": "eSports Club",
-    "description": "UBC Esports is a large student gaming community that brings together players of all skill levels who enjoy competitive or casual gaming. The club fields teams in popular esports titles, hosts tournaments and community events, and provides spaces for students to meet others who share an interest in gaming. Members can join competitive rosters, participate in casual game nights, or help with event organizing and broadcast production. Overall, the club offers a social and competitive environment for anyone at UBC who wants to get involved in esports or gaming culture.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcea/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Enactus",
-    "description": "Enactus UBC is a student organization that focuses on creating social impact through entrepreneurial projects. The club brings together students who want to use business skills to solve real problems in the community, such as sustainability, youth education, or food insecurity. Members work in teams to design and run long term initiatives, often in partnership with local groups or schools, while gaining hands-on experience in project management, leadership, and social entrepreneurship. Enactus UBC gives students a chance to build meaningful projects, meet motivated peers, and make a positive difference beyond the classroom.",
-    "price": 0,
-    "contact": "https://www.instagram.com/enactusubc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Vancouver Housing Market Club",
-    "description": "Vancouver Housing Market Club (VHMC) at University of British Columbia is a student-led club that focuses on understanding real estate trends, housing economics, and the Vancouver housing market in particular. The club offers events with industry professionals, guest speakers from real estate, finance and policy sectors, and workshops that help members explore housing data, market dynamics, and investment-related topics. It welcomes students from any faculty who are curious about housing markets, real estate research, and the intersection of economics, urban planning and finance.",
-    "price": 5,
-    "contact": "https://www.instagram.com/ubc_vhmc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Baking Club",
-    "description": "Hello! Welcome to the UBC Baking Club. We're super excited to have you here! Whether you're a seasoned baking pro or are completely new to baking, we hope you enjoy your time here and create something you can really be proud of! In addition to hosting workshops at UBC, we also have an outreach team dedicated to hosting workshops in the local community for vulnerable populations.",
-    "price": 15,
-    "contact": "https://www.instagram.com/ubcbaking/"
-  },
-  {
-    "name": "Nutrikids",
-    "description": "UBC NutriKids is a student-led initiative at the University of British Columbia that visits elementary schools across the Lower Mainland to deliver fun, interactive nutrition education workshops. Student volunteers work in teams to plan and visit classrooms, bringing whole foods, games, songs, and hands-on activities so that young children get to touch, smell, taste, and learn about healthy eating. The club helps volunteers gain practical skills like lesson planning, public speaking, and coordinating with teachers while making a positive impact in schools and promoting food literacy.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcnutrikids/%E2%80%9D"
-  },
-  {
-    "name": "Dance Club",
-    "description": "UBC Dance Club is a student organization where beginners and experienced dancers can learn and practice a variety of ballroom and partner dance styles. The club offers weekly classes taught by instructors, practice sessions for members, and social dance events that help students meet others in a relaxed, active environment. Styles often include waltz, salsa, cha cha, and more, with options for students who want to dance casually as well as those interested in performing or competing. It is a friendly club that makes it easy to try new styles, stay active, and connect with people who enjoy dance.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcdanceclub/?hl=en"
-  },
-  {
-    "name": "Ice Cream Club",
-    "description": "Welcome to the Ice Cream Club, where every scoop brings us closer together! At our university, we believe that life is sweeter when shared with friends. Join us for a delightful mix of fun and relaxation as we indulge in our favorite frozen treats while enjoying social events, game nights, and ice cream tastings. Whether you’re a die-hard ice cream lover or just looking to unwind and meet new people, our club is the perfect place to chill out and savor the joys of life—one scoop at a time!",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcicecream/"
-  },
-  {
-    "name": "Boxing Club",
-    "description": "UBC Boxing Club is a student group that teaches boxing fundamentals in a supportive, fitness-focused environment. Members learn proper technique such as footwork, punching form, defensive movements, and conditioning drills, with sessions designed for beginners as well as students who already have experience. The club emphasizes safety, discipline, and fitness rather than full-contact sparring, and it offers a structured way to build strength and confidence while training with others. It is a good place for students who want a challenging workout, want to improve their striking skills, or enjoy the community aspect of group training.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcboxingclub/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Fashion Club",
-    "description": "UBC Fashion Club is a student group for anyone interested in fashion, styling, design, creative expression, or the fashion industry. The club hosts events such as clothing swaps, styling workshops, photoshoots, panel talks with industry guests, and social gatherings where students can share ideas and explore personal style. Members can participate in creative projects, contribute to lookbooks, or collaborate on event planning. Overall, the club provides a fun and supportive space for students to engage with fashion, meet others with similar interests, and explore the artistic and cultural sides of style.",
-    "price": 10,
-    "contact": "https://www.instagram.com/fashionclububc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Blockchain",
-    "description": "UBC Blockchain Club is a student-led group at the University of British Columbia that focuses on education, innovation, and community around blockchain technology. They host workshops, talks, hackathons, and networking events that span topics from basic blockchain principles to advanced applications and Web3. The club welcomes students from all faculties who want to explore blockchain, build projects, meet like-minded peers, and connect with industry professionals.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcblockchain/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "AI Safety",
-    "description": "UBC AI Safety is a student-run initiative at the University of British Columbia dedicated to the study and practice of artificial intelligence safety. The group offers courses, policy reading groups, project opportunities, and a community space for students who want to explore how advanced AI systems might impact society and how to guide their safe development. Members learn about topics such as alignment, governance, risk assessment and work together on research or outreach aimed at making AI more beneficial and less harmful.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcaisafety/%E2%80%9D"
-  },
-  {
-    "name": "Formula Electric",
-    "description": "The UBC Formula Electric team is a multidisciplinary student-led group at University of British Columbia that designs, builds, and races a fully electric open-wheel formula-style car. They aim to combine high performance with sustainability, giving students real engineering experience across mechanical, electrical, software, and business roles. The club welcomes students from a variety of backgrounds (not just engineering) and involves them in everything from battery systems and aerodynamics to project management and manufacturing logistics. Membership typically requires a significant time commitment each week and the team often competes in international events, which adds both challenge and prestige.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcformulaelectric/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Taekwondo Club",
-    "description": "Whether you're a retired black belt, actively training for your next belt, have no idea what Taekwondo is, or are just looking for something fun between lectures, this is the club for you! As one of the largest martial arts clubs at UBC, we pride ourselves on building an inclusive and supportive community through the traditional Korean martial art of Taekwondo. Through our weekly classes, we aim to help you build a foundation in Taekwondo, self defence, and fitness, as well as foster a fun social environment to build lasting friendships. If you're looking to enter the world of Taekwondo, reconnect with it, or continue to further your journey, consider checking us out!",
-    "price": 12,
-    "contact": "https://www.instagram.com/ubctaekwondo/"
-  },
-  {
-    "name": "Formula Racing",
-    "description": "UBC Formula (Formula UBC) is a student engineering design team that builds a small, high-performance formula-style race car from the ground up each year and competes in the Formula SAE competitions. Students work in specialized subteams such as powertrain, chassis, suspension, aerodynamics, electronics, controls, and business operations. The team offers hands-on experience with design, manufacturing, testing, and project management, using tools and processes similar to those found in industry. Members learn how to take a complex engineering project from concept to competition while working in a fast-paced, collaborative environment.",
-    "price": 0,
-    "contact": "https://www.instagram.com/formula.ubc/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Barista Club",
-    "description": "AMS Barista Club's core goal is to create an open community for coffee enthusiasts, offering a platform for students to connect, learn, and explore the world of coffee in various ways. Despite the growing coffee industry in Vancouver and the keen interest of many students in coffee culture and cafe work, limited opportunities exist, often constrained by time, budget, and background limitations. To bridge this gap, our club aims to provide students easily accessible experiences that offer foundational knowledge and chances to learn diverse coffee-related skills, all without requiring employment at a cafe or paying for private lessons.",
-    "price": 8,
-    "contact": "https://www.instagram.com/ubcbaristaclub/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "UBC Solar",
-    "description": "UBC Solar is a student engineering design team that builds and races solar-powered vehicles. Members work on everything from mechanical design and aerodynamics to electrical systems, battery design, solar arrays, software, and business operations. The team focuses on creating a fully functional, road-ready solar car for competitions, giving students hands-on experience with engineering tools, manufacturing, teamwork, and long-term project development. It is open to students from many faculties and provides a collaborative environment for anyone interested in sustainability, engineering design, or working on a large technical project.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcsolar/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Canadian Wheelchair Club",
-    "description": "Welcome to the UBC Canadian Wheelchair Club! Our mission is to promote inclusivity, support, and empowerment for individuals with disabilities. As a community-driven organization, we aim to provide a space where members can connect, share experiences, and engage in activities that foster physical and social well-being. Our motto Helping the 100 Million refers to our ongoing efforts to support and better the lives of individuals facing significant challenges in access to mobility devices. It signifies our ambitious goal and collective commitment to positively impact the lives of over 100 million people worldwide who are neglected and marginalized due to disabilities. We believe that through our collective efforts, we can strive to create meaningful change and ensure these individuals can obtain the support and resources they need to thrive.",
-    "price": 0,
-    "contact": "https://www.instagram.com/ubcwheelchair/"
-  },
-  {
-    "name": "Submarine Design Team",
-    "description": "UBC Submarine Design Team (SUBC) is a student engineering group that designs and builds a human-powered submarine for international competitions. Members work on mechanical design, hull construction, propulsion systems, controls, safety features, and overall project logistics. The team gives students practical experience with engineering tools and manufacturing while working toward creating a functional sub that can be piloted underwater. It brings together students from many disciplines and offers a collaborative environment for anyone interested in marine engineering or large technical design projects.",
-    "price": 0,
-    "contact": "https://www.instagram.com/subc_ubc/%E2%80%9D"
-  },
-  {
-    "name": "Music Production Club",
-    "description": "Our mission is to provide a supportive and creative environment where music enthusiasts can explore, develop, and refine their musical talents. We aim to serve as an entry point for students interested in music production by offering a range of comprehensive educational classes, workshops, and resources designed to enhance their technical skills and knowledge. We strive to foster a vibrant and inclusive community where members can connect, share ideas, and collaborate on musical projects, promoting creativity and artistic expression. Additionally, we advocate for the interests and passions of music lovers within the university, representing their voices in interactions with university organizations and contributing to the broader cultural and artistic landscape of our institution.",
-    "price": 5,
-    "contact": "https://www.instagram.com/mpc_ubc/"
-  },
-  {
-    "name": "Formula 1 Club",
-    "description": "The AMS F1 Club at UBC is a student club at UBC for fans of Formula 1 and motorsport. The club organizes events such as watch parties for Grand Prix races, sim-racing leagues, go-kart outings, and social gatherings to connect students who enjoy racing and automotive culture. Membership is open to anyone curious about F1, whether you're a long-time fan or just want a fun way to watch races with others.",
-    "price": 15,
-    "contact": "https://www.instagram.com/ubcf1club/?hl=en%E2%80%9D"
-  },
-  {
-    "name": "Poker Club",
-    "description": "Building a fun, inclusive community, while spreading the game of poker to all students.",
-    "price": 5,
-    "contact": "https://www.instagram.com/ubcpokerclub/"
-  }
-
+    {
+        "name": "Squash Club",
+        "description": "Welcome to the UBC Squash Club! Founded this year in 2024, this is your gateway to a vibrant community of squash enthusiasts at the University of British Columbia. Whether you're a seasoned player or just picking up a racquet for the first time, our club offers a welcoming environment for all skill levels! Join us for our weekly drop-in sessions for club members, where you can sharpen your skills, meet fellow players, and enjoy the thrill of squash.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcsquash/",
+        "image": "Screenshot 2025-11-16 000003.png"
+    },
+    {
+        "name": "Disc Golf Club",
+        "description": "Welcome to the AMS Disc Golf Club at UBC! We're all about building a vibrant, community-focused group where fun, friendship, and physical well-being come together. Our club is the perfect place for students to unwind, enjoy disc golf, and make new connections. Whether you're a beginner eager to learn or an advanced player looking to compete at the highest level, we have got something for you! Join us for a mix of casual and competitive events, embrace the beauty of Vancouver’s parks, and connect with fellow students in a welcoming and supportive environment.",
+        "price": 5,
+        "contact": "https://www.instagram.com/ubcdiscgolf/",
+        "image": "Screenshot 2025-11-16 001217.png"
+    },
+    {
+        "name": "Undergraduate Statistics Society",
+        "description": "The UBC Undergraduate Statistics Society (USS) is a student-run club that builds community among students interested in statistics and data science. Supported by the UBC Statistics Department, the society hosts workshops, course review sessions, career panels, and social events to help students strengthen technical skills, connect with peers, and explore academic or industry pathways in analytics. USS also creates spaces for networking with professors, alumni, and industry professionals, while organizing casual socials that make the stats community more welcoming and collaborative. Overall, the club aims to support students academically, professionally, and socially throughout their statistics or data-science journey at UBC.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubc.uss/",
+        "image": "uss.png"
+    },
+    {
+        "name": "Chinese Students Association",
+        "description": "Established in 1956, the Chinese Students Association (CSA) is the first and longest-standing Chinese student club at UBC. As a non-profit organization, CSA is dedicated to building a vibrant community centred around a passion for Chinese culture. Our mission is to foster connections and friendships among UBC students by showcasing the richness of Chinese heritage through a variety of inclusive sports, cultural, and social events. For 60 years, CSA has established trust and recognition with its community through lasting partnerships with both local and international organizations. Moreover, CSA members enjoy numerous discounts sponsored by partners in the greater Vancouver area. We motivate our members to be engaged in the community and become well-rounded individuals. Our club is inclusive and welcoming to applicants of all experience levels and backgrounds. ",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubccsa/",
+        "image": "csa.png"
+    },
+    {
+        "name": "Stem Fellowship",
+        "description": "STEM Fellowship is a student-run, national organization that provides a platform for students interested in STEM fields to connect with one another and with professionals, engage in research and improve skills in scholarly writing. We seek to enable students to learn collaboratively, express their passion and love for science, and expand the scope of human knowledge through scientific, multidisciplinary inquiry. It involves research opportunities, mentorship opportunities, and chances to work with a team in STEM based ventures.",
+        "price": 2,
+        "contact": "https://www.instagram.com/ubcstemfellowship/",
+        "image": "stem_fellow.png"
+    },
+    {
+        "name": "nwPlus",
+        "description": "nwPlus is a student-led club supporting aspiring programmers and designers, based out of University of British Columbia. Our mission is to foster innovation and creativity in tech for students to connect with passionate peers and mentors, through events such as our annual hackathons. By providing the right tools, resources, and support, the team at nwPlus aims to encourage students to gain hands-on experience with cutting-edge technology outside of classroom settings.",
+        "price": 0,
+        "contact": "https://www.instagram.com/nwplusubc/",
+        "image": "nwPlus_logo.png"
+    },
+    {
+        "name": "Hong Kong YOURS Association",
+        "description": "Established in 1997, Hong Kong YOURS Association a subsidiary of the AMS @ the University of British Columbia. Through various social events across the school year, we aim to create a “home away from home” for students from a Hong Kong background. Although many of our members are born and/or raised in Hong Kong, we are a multicultural club and you will find diversity both in our members and in the events that we hold.",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubchkyours/",
+        "image": "hkyours.png"
+    },
+    {
+        "name": "BizTech",
+        "description": "UBC BizTech is one of the largest student-run technology clubs at the University of British Columbia, founded in 2007 (originally as the Business Technology Network) and now welcoming students from all majors who are interested in the intersection of business and tech. They host immersive experiences like hackathons, conferences, workshops and networking nights. Designed to build skills, create meaningful industry connections, and foster a community of tech-enthusiastic students.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcbiztech/%E2%80%9D",
+        "image": "biztech.png"
+    },
+    {
+        "name": "UX Hub",
+        "description": "UBC UX Hub is a community for students who want to explore or grow in user experience design, whether you're a complete beginner or already building projects. The club focuses on helping students gain practical skills through workshops, design challenges, mentorship, and team projects that feel close to real industry work. They also bring in designers and product professionals for panels and networking, which makes it easier to learn what UX careers actually look like. If you're considering joining, UX Hub is a place to meet other creative and tech-minded students, build a portfolio, and get experience that can help in internships or future design roles.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcuxhub/%E2%80%9D",
+        "image": "uxhub.png"
+    },
+    {
+        "name": "Japan Association",
+        "description": "UBC Japan Association is a club centered around building a community around sharing and appreciating Japanese culture. We host events inspired by the cultural, social and sporting aspect of Japanese culture. We hold these events twice a month, and they are great opportunities to socialize, have fun, and learn about Japan. If you appreciate Japanese culture and are interested in having a good time, then we welcome you to join UBCJA! Knowing Japanese, or being Japanese is NOT required to join our community! See you at our next event ^_^",
+        "price": 12,
+        "contact": "https://www.instagram.com/ubc_ja/",
+        "image": "japaneseass.png"
+    },
+    {
+        "name": "BOLT",
+        "description": "BOLT UBC is the largest business and data analytics club on the UBC Vancouver campus and it welcomes students from all majors who want to build practical analytics skills and connect with the analytics community. They offer beginner-friendly workshops covering tools like SQL, Excel, and data visualization, team-based case competitions where you tackle real business problems, and networking events where you meet industry professionals and alumni working in the analytics field. If you’re looking to add hands-on data experience, bolster your resume, meet peers who share your interests in data/tech, and explore analytics pathways beyond coursework, BOLT UBC is the place for you.",
+        "price": 10,
+        "contact": "https://www.instagram.com/bolt.ubc/?hl=en%E2%80%9D",
+        "image": "bolt.png"
+    },
+    {
+        "name": "Japan Career Network",
+        "description": "The UBC Japan Career Network (JCN) is a student-run club with a mission to support all those who envision a future career in Japan or in the Nikkei Industry. Founded in 2013, we have supported international students, exchange students, and domestic students for over a decade.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubc.jcn/",
+        "image": "japancareernet.png"
+    },
+    {
+        "name": "AI CLUB",
+        "description": "At the forefront of AI transformation, the UBC AI Club is dedicated to driving innovation, democratizing cutting-edge AI knowledge for all students, and forging strong, collaborative partnerships. We are on a mission to establish UBC as Canadas leading hub for AI education and development.",
+        "price": 3,
+        "contact": "https://www.instagram.com/ubcaiclub/",
+        "image": "aiclub.png"
+    },
+    {
+        "name": "Jewish Students Association",
+        "description": "The JSA strives to provide fun and inclusive social, cultural, and educational programming for all Jewish students of Vancouver's Jewish university community. We hope to provide a space for students to connect with Judaism through cultural events and educational projects on campus. The JSA strives to be open to a complete spectrum of Jewish students' opinions and hopes to liaise with any organization that promotes all UBC students' multicultural interests. We strive to promote safety and security to every Jewish student on campus and stand up against antisemitism.",
+        "price": 8,
+        "contact": "https://www.instagram.com/ubc.jsa/",
+        "image": "jewish.png"
+    },
+    {
+        "name": "Data Science Club",
+        "description": "The Data Science club brings together students who are interested in data science, machine learning, programming, statistics or analytics and offers a mix of workshops, team-projects and networking events. They host sessions where you can build skills in languages or tools used in data science, join project teams to apply those skills in real problems, and attend meet-ups where you connect with other students and professionals working in data and tech. If you are looking to explore data science beyond your courses, the DSCI Club provides a space to learn, collaborate and network.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcdsci/",
+        "image": "dsciclub.png"
+    },
+    {
+        "name": "Finance Association",
+        "description": "The UBC Finance Association is a student club that helps students learn about the finance industry and build skills relevant to careers like investment banking, asset management, corporate finance, and financial analysis. The club runs workshops, speaker panels, networking nights, and case competitions that let students apply concepts such as valuation or market analysis in practical settings. It is open to students from any faculty and creates a space to meet peers with similar interests, connect with professionals, and gain exposure to different areas of finance.",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubc.fa/",
+        "image": "financeassoc.png"
+    },
+    {
+        "name": "Muslim Students Association",
+        "description": "Welcome to the Muslim Students Association of UBC, MSA UBC, your home away from home! Whether you are looking for a community, spiritual growth, or just a place to unwind, we are here for you. As the main Muslim club and representative of Islam on campus, we offer a variety of events, from enlightening Islamic talks to fun recreational activities. At MSA UBC, we aim to serve Allah SWT by supporting Muslim students, building bridges with the wider community, and sharing the beauty of Islam with people from all walks of life. Guided by the Qur’an, Sunnah, and the wisdom of our scholars, we are dedicated to fulfilling our purpose of worshiping Allah SWT. Join us and be part of a vibrant, welcoming community!",
+        "price": 12,
+        "contact": "https://www.instagram.com/msaubc/",
+        "image": "muslim.png"
+    },
+    {
+        "name": "UBC Startups",
+        "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcstartups/",
+        "image": "ubcstart.png"
+    },
+    {
+        "name": "New Taiwanese Generation",
+        "description": "New Taiwanese Generation is one of the established Taiwanese clubs at UBC. We are a half cultural / half social club, seeking to bring Taiwanese culture to our UBC campus and pushing to break social barriers between individuals. New Taiwanese Generation (NTG) is a Taiwanese cultural club located at the University of British Columbia - Vancouver campus. NTG has been operated by student volunteers and has attracted more than 1000 members since it was established in 1998. At NTG, we strive to help students adjust to university life, make meaningful relationships, and create memorable experiences.",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubcntg/",
+        "image": "newtaiwanese.png"
+    },
+    {
+        "name": "eProjects",
+        "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
+        "price": 10,
+        "contact": "https://www.instagram.com/eprojectsubc/",
+        "image": "eproj.png"
+    },
+    {
+        "name": "Persian Club",
+        "description": "Established in 1989, UBC Persian Club is a non-profit student organization at the University of British Columbia. We dedicate ourselves to bringing together diverse elements of the Iranian community, through our social gatherings, and empowering Iranian UBC students through the facilitation of cultural events and professional projects. UBC Persian Club is a non-religious and non-political student organization.",
+        "price": 12,
+        "contact": "https://www.instagram.com/ubcpc/",
+        "image": "persian.png"
+    },
+    {
+        "name": "Undergraduate Research Opportunities",
+        "description": "URO is a student-run club that helps undergraduates access and succeed in research across all disciplines. It offers mentorship through programs like REX (Research Experience), hosts events such as research fairs and poster sessions, and connects students with supervisors, labs, and publishing opportunities. Whether you’re just curious about research or ready to join a project, URO provides structured steps — peer support, workshops, and networking — to help you get involved and build your research portfolio",
+        "price": 10,
+        "contact": "https://www.instagram.com/uro_ubc/%E2%80%9D",
+        "image": "URO.png"
+    },
+    {
+        "name": "Singapore Students Association",
+        "description": "The UBC Singapore Students Association is a sociocultural club at the University of British Columbia (Vancouver) that is comprised of Singaporeans and UBC students interested in Singaporean culture. As a club, we strive to build a strong, lasting and welcoming community. Throughout the school year, we seek to foster friendships among our members, provide a support base for Singaporean students, and offer our members various unique opportunities and experiences. Our members are from all over the world and from all walks of life, and we welcome anyone and everyone to be a part of our community!",
+        "price": 10,
+        "contact": "https://www.instagram.com/theubcssa/",
+        "image": "signapor.png"
+    },
+    {
+        "name": "Launch Pad",
+        "description": "UBC Launch Pad (at University of British Columbia) is a student-run software engineering club where members work in teams to build real software projects over the course of a semester. They recruit developers, designers, and strategists, form small project teams, and apply industry-standard tools and workflows — so you can build something concrete for your portfolio while collaborating with peers. Their projects deal with everything from web apps to mobile and backend systems, and they welcome students from all majors (not just computer science).",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubclaunchpad/?hl=en",
+        "image": "launchpad.png"
+    },
+    {
+        "name": "K-WAVE",
+        "description": " K-Wave is UBC's first and only Korean entertainment club open to anyone interested in Korean culture. Located at University of British Columbia's Vancouver campus, K-Wave was founded in Spring 2012. Since its founding, the club has provided various events year-round, open to both members and non-members.",
+        "price": 13,
+        "contact": "https://www.instagram.com/ubckwave/",
+        "image": "kwave.png"
+    },
+    {
+        "name": "Women in Data Science",
+        "description": "WiDS@UBC is a student-led club at the University of British Columbia that focuses on creating a welcoming, diverse space for students—especially women and underrepresented genders—who are interested in data science, analytics, and technology. The club offers hands-on workshops (e.g., in Python, R, data visualization), case competitions, mock interviews, and networking events to help members build real skills and connect with peers and industry professionals. Whether you’re just curious about data or already working on analytics projects, WiDS@UBC gives you opportunities to learn, meet others with similar ambitions, and gain exposure to what a data-science career could look like.",
+        "price": 0,
+        "contact": "https://www.instagram.com/widsubc/?hl=en%E2%80%9D",
+        "image": "WIDS.png"
+    },
+    {
+        "name": "Vietnamese Student Association",
+        "description": "We are a group of students looking to make VSA a home base not only for Vietnamese students but for all UBC students. We love to share Vietnam's delicious foods, trendy fashion, music, and more with the community! In addition, one of our biggest goals is to connect students together by providing opportunities to make friends, join a network, and most importantly, a family. If you are also ham chơi and love to help create a lifetime of fun memories with us, you have found the right place! Do not worry, we are also ham học --- we are a whole package that supports our students academic, social, and cultural journeys.",
+        "price": 12,
+        "contact": "https://www.instagram.com/ubcvsa/?hl=en",
+        "image": "Viet.png"
+    },
+    {
+        "name": "Women in Computer Science",
+        "description": "WiCS (Women in Computer Science) at UBC is a student group that supports women and gender-diverse students interested in computing. The club focuses on building community, offering mentorship, and creating opportunities for students to grow their technical and professional skills. They run workshops, study sessions, networking events, speaker panels, and outreach programs that help members explore computer science in a supportive environment. WiCS also works to make the broader CS community more inclusive and encourages students at all levels to connect, collaborate, and gain confidence in their technical journeys.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcwics/%E2%80%9D",
+        "image": "WICS.png"
+    },
+    {
+        "name": "Product Management Club",
+        "description": "UBC Product Management Club (PMC) is a student-run club at University of British Columbia that supports students interested in product management. The club provides workshops on frameworks like product discovery and go-to-market strategy, hosts hackathon-style competitions where teams build product solutions, and arranges networking sessions with industry professionals. PMC welcomes students from any discipline and aims to help members develop the mindset and skills needed for roles in product design, strategy, and development.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcpmc/%E2%80%9D",
+        "image": "PMC.png"
+    },
+    {
+        "name": "BizChina Club",
+        "description": "UBC BizChina is a club founded in 2011 that focuses on hosting large-scale conferences, networking events and corporate presentations to benefit all students. We aim to bridge the gap between China and Canada where students ambitions in a career related to China and Sino-Canadian business can be developed.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcbizchina/",
+        "image": "BizChina.png"
+    },
+    {
+        "name": "Chinese Varsity Club",
+        "description": "Join UBC's largest social club, which offers tons of events, such as parties, bunny yoga, karaoke, talent shows, trips to Mexico, and more! With 11 departments, there will always be something for you. CVC embodies the idea of work hard, party harder, so if you crave fun socials outside of school or want to make lots of new friends, join us for this crazy year",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubc.cvc/?hl=en",
+        "image": "CVC.png"
+    },
+    {
+        "name": "Marketing Association",
+        "description": "UBC Marketing Association (UBCMA) is a student-led club at the University of British Columbia focused on marketing education, engagement, and execution. It welcomes students from all faculties and hosts a range of events including networking socials, case competitions, a major conference, and company showcases. The club aims to equip students with practical marketing skills, build industry connections, and provide chances to apply what they learn in real-world contexts.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcma/?hl=en%E2%80%9D",
+        "image": "marketingass.png"
+    },
+    {
+        "name": "Italian Student Association",
+        "description": "Hey everyone! Welcome to the Italian Student Association! We strive to represent Italians and the Italian culture in the UBC community. We would be thrilled to have you on board for one of our meetings, events or just for a chat! There are no language nor nationality barriers, everyone is welcome!",
+        "price": 10,
+        "contact": "https://amsclubs.ca/italian-student-association/",
+        "image": "italian.png"
+    },
+    {
+        "name": "Ski and Board",
+        "description": "UBC Ski and Board is a student club for anyone interested in skiing or snowboarding, from beginners to advanced riders. The club organizes group trips to mountains throughout the winter, often handling transportation and planning so members can focus on enjoying the slopes. They also run social events on campus, offer gear-related tips, and help students meet others who share an interest in snow sports. It is a relaxed, community-focused club that makes it easy for students to explore skiing and snowboarding while connecting with people who enjoy the same activities.",
+        "price": 20,
+        "contact": "https://www.instagram.com/ubcskiandboard/?hl=en%E2%80%9D",
+        "image": "ski_and_board.png"
+    },
+    {
+        "name": "Actuarial Sciences Club",
+        "description": "The Actuarial Science Club @ UBC brings together students at UBC who are interested in pursuing actuarial careers. The club focuses on networking, exam preparation support (for exams like SOA P/FM), and building a community of peers preparing for roles in insurance, risk, and financial modelling. It's a resource for students who want to demystify the actuarial path and connect with others who share that goal.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubc_asc/?hl=en%E2%80%9D",
+        "image": "actuary.png"
+    },
+    {
+        "name": "Taiwan Association",
+        "description": "UBCTA (Taiwan Association) is a cultural club and beyond. Our Philosophy is to be Taiwanese (and more) students second home. For this, we hold events monthly starting in July, in Taiwan, also with North America International Student Alliance in Taiwan. Through this, we provide assistance for international Taiwanese students coming to BC and make them feel less alone before stepping on the journey of studying abroad. In UBC, we collaborate with other cultural clubs, and aim to promote Asian culture together.",
+        "price": 12,
+        "contact": "https://www.instagram.com/ubcta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+        "image": "TA.png"
+    },
+    {
+        "name": "Accounting Club",
+        "description": "UBC Accounting Club is a student organization at the Sauder School of Business, University of British Columbia that supports students interested in accounting and related fields. The club offers networking events with accounting firms, information sessions about career paths and designations, social gatherings, and workshops that help members build professional skills. It emphasizes community among students and connections with industry professionals, helping members explore accounting careers and prepare for recruitment processes.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcaccounting/?hl=en%E2%80%9D",
+        "image": "AccountingCLub.png"
+    },
+    {
+        "name": "Sauder Health and Wealthness",
+        "description": "Sauder Health & Wellness (HeWe) is a student-led service within the Commerce Undergraduate Society at UBC Sauder School of Business that focuses on supporting the mental and physical wellbeing of business students. The group organizes free communal meals, wellness workshops, mental-health awareness campaigns, and peer-support resources. They also maintain a curated list of campus-wide services and digital tools aimed at stress management, peer connection, and healthy habits. If you’re studying business at UBC and want to connect with fellow students around wellness and self-care, this team offers a friendly, no-pressure space for that.",
+        "price": 0,
+        "contact": "https://www.instagram.com/sauderhewe/?hl=en%E2%80%9D",
+        "image": "SauderHW.png"
+    },
+    {
+        "name": "Association of Korean Canadian Scientists and Engineers",
+        "description": "Our chapters goal is to strengthen the Korean Canadian community within UBC by hosting innovative and welcoming academic and social events, supported by our close-knit executive team. We welcome students from all backgrounds and look forward to meeting all of you!",
+        "price": 10,
+        "contact": "https://www.instagram.com/akcse_ubc/",
+        "image": "AKCSE.png"
+    },
+    {
+        "name": "eSports Club",
+        "description": "UBC Esports is a large student gaming community that brings together players of all skill levels who enjoy competitive or casual gaming. The club fields teams in popular esports titles, hosts tournaments and community events, and provides spaces for students to meet others who share an interest in gaming. Members can join competitive rosters, participate in casual game nights, or help with event organizing and broadcast production. Overall, the club offers a social and competitive environment for anyone at UBC who wants to get involved in esports or gaming culture.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcea/?hl=en%E2%80%9D",
+        "image": "esporrts.png"
+    },
+    {
+        "name": "Enactus",
+        "description": "Enactus UBC is a student organization that focuses on creating social impact through entrepreneurial projects. The club brings together students who want to use business skills to solve real problems in the community, such as sustainability, youth education, or food insecurity. Members work in teams to design and run long term initiatives, often in partnership with local groups or schools, while gaining hands-on experience in project management, leadership, and social entrepreneurship. Enactus UBC gives students a chance to build meaningful projects, meet motivated peers, and make a positive difference beyond the classroom.",
+        "price": 0,
+        "contact": "https://www.instagram.com/enactusubc/?hl=en%E2%80%9D",
+        "image": "enactus.png"
+    },
+    {
+        "name": "Vancouver Housing Market Club",
+        "description": "Vancouver Housing Market Club (VHMC) at University of British Columbia is a student-led club that focuses on understanding real estate trends, housing economics, and the Vancouver housing market in particular. The club offers events with industry professionals, guest speakers from real estate, finance and policy sectors, and workshops that help members explore housing data, market dynamics, and investment-related topics. It welcomes students from any faculty who are curious about housing markets, real estate research, and the intersection of economics, urban planning and finance.",
+        "price": 5,
+        "contact": "https://www.instagram.com/ubc_vhmc/?hl=en%E2%80%9D",
+        "image": "housingmarket.png"
+    },
+    {
+        "name": "Baking Club",
+        "description": "Hello! Welcome to the UBC Baking Club. We're super excited to have you here! Whether you're a seasoned baking pro or are completely new to baking, we hope you enjoy your time here and create something you can really be proud of! In addition to hosting workshops at UBC, we also have an outreach team dedicated to hosting workshops in the local community for vulnerable populations.",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubcbaking/",
+        "image": "bakingclub.png"
+    },
+    {
+        "name": "Nutrikids",
+        "description": "UBC NutriKids is a student-led initiative at the University of British Columbia that visits elementary schools across the Lower Mainland to deliver fun, interactive nutrition education workshops. Student volunteers work in teams to plan and visit classrooms, bringing whole foods, games, songs, and hands-on activities so that young children get to touch, smell, taste, and learn about healthy eating. The club helps volunteers gain practical skills like lesson planning, public speaking, and coordinating with teachers while making a positive impact in schools and promoting food literacy.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcnutrikids/%E2%80%9D",
+        "image": "nutrikids.png"
+    },
+    {
+        "name": "Dance Club",
+        "description": "UBC Dance Club is a student organization where beginners and experienced dancers can learn and practice a variety of ballroom and partner dance styles. The club offers weekly classes taught by instructors, practice sessions for members, and social dance events that help students meet others in a relaxed, active environment. Styles often include waltz, salsa, cha cha, and more, with options for students who want to dance casually as well as those interested in performing or competing. It is a friendly club that makes it easy to try new styles, stay active, and connect with people who enjoy dance.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcdanceclub/?hl=en",
+        "image": "dance.png"
+    },
+    {
+        "name": "Ice Cream Club",
+        "description": "Welcome to the Ice Cream Club, where every scoop brings us closer together! At our university, we believe that life is sweeter when shared with friends. Join us for a delightful mix of fun and relaxation as we indulge in our favorite frozen treats while enjoying social events, game nights, and ice cream tastings. Whether you’re a die-hard ice cream lover or just looking to unwind and meet new people, our club is the perfect place to chill out and savor the joys of life—one scoop at a time!",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcicecream/",
+        "image": "icecrema.png"
+    },
+    {
+        "name": "Boxing Club",
+        "description": "UBC Boxing Club is a student group that teaches boxing fundamentals in a supportive, fitness-focused environment. Members learn proper technique such as footwork, punching form, defensive movements, and conditioning drills, with sessions designed for beginners as well as students who already have experience. The club emphasizes safety, discipline, and fitness rather than full-contact sparring, and it offers a structured way to build strength and confidence while training with others. It is a good place for students who want a challenging workout, want to improve their striking skills, or enjoy the community aspect of group training.",
+        "price": 10,
+        "contact": "https://www.instagram.com/ubcboxingclub/?hl=en%E2%80%9D",
+        "image": "boxing.png"
+    },
+    {
+        "name": "Fashion Club",
+        "description": "UBC Fashion Club is a student group for anyone interested in fashion, styling, design, creative expression, or the fashion industry. The club hosts events such as clothing swaps, styling workshops, photoshoots, panel talks with industry guests, and social gatherings where students can share ideas and explore personal style. Members can participate in creative projects, contribute to lookbooks, or collaborate on event planning. Overall, the club provides a fun and supportive space for students to engage with fashion, meet others with similar interests, and explore the artistic and cultural sides of style.",
+        "price": 10,
+        "contact": "https://www.instagram.com/fashionclububc/?hl=en%E2%80%9D",
+        "image": "fasion.png"
+    },
+    {
+        "name": "Blockchain",
+        "description": "UBC Blockchain Club is a student-led group at the University of British Columbia that focuses on education, innovation, and community around blockchain technology. They host workshops, talks, hackathons, and networking events that span topics from basic blockchain principles to advanced applications and Web3. The club welcomes students from all faculties who want to explore blockchain, build projects, meet like-minded peers, and connect with industry professionals.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcblockchain/?hl=en%E2%80%9D",
+        "image": "blockchain.png"
+    },
+    {
+        "name": "AI Safety",
+        "description": "UBC AI Safety is a student-run initiative at the University of British Columbia dedicated to the study and practice of artificial intelligence safety. The group offers courses, policy reading groups, project opportunities, and a community space for students who want to explore how advanced AI systems might impact society and how to guide their safe development. Members learn about topics such as alignment, governance, risk assessment and work together on research or outreach aimed at making AI more beneficial and less harmful.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcaisafety/%E2%80%9D",
+        "image": "aisafeyty.png"
+    },
+    {
+        "name": "Formula Electric",
+        "description": "The UBC Formula Electric team is a multidisciplinary student-led group at University of British Columbia that designs, builds, and races a fully electric open-wheel formula-style car. They aim to combine high performance with sustainability, giving students real engineering experience across mechanical, electrical, software, and business roles. The club welcomes students from a variety of backgrounds (not just engineering) and involves them in everything from battery systems and aerodynamics to project management and manufacturing logistics. Membership typically requires a significant time commitment each week and the team often competes in international events, which adds both challenge and prestige.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcformulaelectric/?hl=en%E2%80%9D",
+        "image": "formulaE.png"
+    },
+    {
+        "name": "Taekwondo Club",
+        "description": "Whether you're a retired black belt, actively training for your next belt, have no idea what Taekwondo is, or are just looking for something fun between lectures, this is the club for you! As one of the largest martial arts clubs at UBC, we pride ourselves on building an inclusive and supportive community through the traditional Korean martial art of Taekwondo. Through our weekly classes, we aim to help you build a foundation in Taekwondo, self defence, and fitness, as well as foster a fun social environment to build lasting friendships. If you're looking to enter the world of Taekwondo, reconnect with it, or continue to further your journey, consider checking us out!",
+        "price": 12,
+        "contact": "https://www.instagram.com/ubctaekwondo/",
+        "image": "Taekwondo.png"
+    },
+    {
+        "name": "Formula Racing",
+        "description": "UBC Formula (Formula UBC) is a student engineering design team that builds a small, high-performance formula-style race car from the ground up each year and competes in the Formula SAE competitions. Students work in specialized subteams such as powertrain, chassis, suspension, aerodynamics, electronics, controls, and business operations. The team offers hands-on experience with design, manufacturing, testing, and project management, using tools and processes similar to those found in industry. Members learn how to take a complex engineering project from concept to competition while working in a fast-paced, collaborative environment.",
+        "price": 0,
+        "contact": "https://www.instagram.com/formula.ubc/?hl=en%E2%80%9D",
+        "image": "Formula Racing.png"
+    },
+    {
+        "name": "Barista Club",
+        "description": "AMS Barista Club's core goal is to create an open community for coffee enthusiasts, offering a platform for students to connect, learn, and explore the world of coffee in various ways. Despite the growing coffee industry in Vancouver and the keen interest of many students in coffee culture and cafe work, limited opportunities exist, often constrained by time, budget, and background limitations. To bridge this gap, our club aims to provide students easily accessible experiences that offer foundational knowledge and chances to learn diverse coffee-related skills, all without requiring employment at a cafe or paying for private lessons.",
+        "price": 8,
+        "contact": "https://www.instagram.com/ubcbaristaclub/?hl=en%E2%80%9D",
+        "image": "Barista.png"
+    },
+    {
+        "name": "UBC Solar",
+        "description": "UBC Solar is a student engineering design team that builds and races solar-powered vehicles. Members work on everything from mechanical design and aerodynamics to electrical systems, battery design, solar arrays, software, and business operations. The team focuses on creating a fully functional, road-ready solar car for competitions, giving students hands-on experience with engineering tools, manufacturing, teamwork, and long-term project development. It is open to students from many faculties and provides a collaborative environment for anyone interested in sustainability, engineering design, or working on a large technical project.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcsolar/?hl=en%E2%80%9D",
+        "image": "Solar.png"
+    },
+    {
+        "name": "Canadian Wheelchair Club",
+        "description": "Welcome to the UBC Canadian Wheelchair Club! Our mission is to promote inclusivity, support, and empowerment for individuals with disabilities. As a community-driven organization, we aim to provide a space where members can connect, share experiences, and engage in activities that foster physical and social well-being. Our motto Helping the 100 Million refers to our ongoing efforts to support and better the lives of individuals facing significant challenges in access to mobility devices. It signifies our ambitious goal and collective commitment to positively impact the lives of over 100 million people worldwide who are neglected and marginalized due to disabilities. We believe that through our collective efforts, we can strive to create meaningful change and ensure these individuals can obtain the support and resources they need to thrive.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcwheelchair/",
+        "image": "Wheelchair.png"
+    },
+    {
+        "name": "Submarine Design Team",
+        "description": "UBC Submarine Design Team (SUBC) is a student engineering group that designs and builds a human-powered submarine for international competitions. Members work on mechanical design, hull construction, propulsion systems, controls, safety features, and overall project logistics. The team gives students practical experience with engineering tools and manufacturing while working toward creating a functional sub that can be piloted underwater. It brings together students from many disciplines and offers a collaborative environment for anyone interested in marine engineering or large technical design projects.",
+        "price": 0,
+        "contact": "https://www.instagram.com/subc_ubc/%E2%80%9D",
+        "image": "SUBC.png"
+    },
+    {
+        "name": "Music Production Club",
+        "description": "Our mission is to provide a supportive and creative environment where music enthusiasts can explore, develop, and refine their musical talents. We aim to serve as an entry point for students interested in music production by offering a range of comprehensive educational classes, workshops, and resources designed to enhance their technical skills and knowledge. We strive to foster a vibrant and inclusive community where members can connect, share ideas, and collaborate on musical projects, promoting creativity and artistic expression. Additionally, we advocate for the interests and passions of music lovers within the university, representing their voices in interactions with university organizations and contributing to the broader cultural and artistic landscape of our institution.",
+        "price": 5,
+        "contact": "https://www.instagram.com/mpc_ubc/",
+        "image": "Music Production.png"
+    },
+    {
+        "name": "Formula 1 Club",
+        "description": "The AMS F1 Club at UBC is a student club at UBC for fans of Formula 1 and motorsport. The club organizes events such as watch parties for Grand Prix races, sim-racing leagues, go-kart outings, and social gatherings to connect students who enjoy racing and automotive culture. Membership is open to anyone curious about F1, whether you're a long-time fan or just want a fun way to watch races with others.",
+        "price": 15,
+        "contact": "https://www.instagram.com/ubcf1club/?hl=en%E2%80%9D",
+        "image": "F1.png"
+    },
+    {
+        "name": "Poker Club",
+        "description": "Building a fun, inclusive community, while spreading the game of poker to all students.",
+        "price": 5,
+        "contact": "https://www.instagram.com/ubcpokerclub/",
+        "image": "Poker.png"
+    },
+    {
+        "name": "Latin Dance Club",
+        "description": "UBC Latin Dance Club is a student group for anyone interested in Latin social dance styles/culture such as salsa, bachata, merengue, and kizomba. The club offers weekly lessons taught by instructors, open practice sessions, and social dance events where members can dance, improve their technique, and meet others in a friendly environment. It welcomes complete beginners as well as experienced dancers and provides an easy way to learn Latin dance, stay active, and join a vibrant dance community on campus.",
+        "price": 0,
+        "contact": "https://www.instagram.com/ubcldc/?hl=en%E2%80%9D",
+        "image": "Latin Dnace.png"
+    }
 ]
