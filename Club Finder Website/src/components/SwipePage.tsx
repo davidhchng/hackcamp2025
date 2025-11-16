@@ -299,7 +299,7 @@ export function SwipePage() {
                 Analyzing Your Profile
               </h2>
               <p className="text-gray-600">
-                Our AI is finding the perfect clubs for you...
+                Our algorithm is finding the perfect clubs for you...
               </p>
             </motion.div>
 
@@ -421,15 +421,15 @@ export function SwipePage() {
                 className="w-full h-full object-cover"
               />
               
-              {/* Gradient overlay */}
+              {/* Gradient overlay - lighter and more subtle */}
               <div 
-                className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent cursor-pointer"
+                className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent cursor-pointer"
                 onClick={toggleExpanded}
               />
 
               {/* Price Tag */}
               {currentClub.price && (
-                <div className="absolute top-6 right-6 pointer-events-none">
+                <div className="absolute top-6 right-6 z-10 pointer-events-none">
                   <div className={`px-4 py-2 rounded-full backdrop-blur-md border shadow-sm ${
                     currentClub.price.toLowerCase() === 'free' 
                       ? 'bg-white/95 border-gray-200 text-blue-600' 
@@ -443,9 +443,14 @@ export function SwipePage() {
                 </div>
               )}
               
-              {/* Content */}
+              {/* Content - with gradient background and backdrop blur */}
               <motion.div 
-                className="absolute bottom-0 left-0 right-0 bg-black/80 text-white overflow-hidden cursor-pointer"
+                className="absolute bottom-0 left-0 right-0 text-white overflow-hidden cursor-pointer"
+                style={{
+                  background: isExpanded 
+                    ? 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.7) 100%)'
+                    : 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, transparent 100%)'
+                }}
                 initial={false}
                 animate={{ 
                   height: isExpanded ? "70%" : "auto",
@@ -454,37 +459,62 @@ export function SwipePage() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 onClick={toggleExpanded}
               >
-                <div className="p-6 overflow-y-auto h-full">
+                <div className={`backdrop-blur-sm overflow-y-auto h-full ${isExpanded ? 'p-6' : 'p-4'}`}>
                   {/* Expand Indicator */}
-                  <div className="flex justify-center mb-2">
+                  <div className={`flex justify-center ${isExpanded ? 'mb-2' : 'mb-1'}`}>
                     <motion.div
                       animate={{ rotate: isExpanded ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <ChevronDown className="w-6 h-6 text-white/60" />
+                      <ChevronDown className={`text-white/80 drop-shadow-lg ${isExpanded ? 'w-6 h-6' : 'w-5 h-5'}`} />
                     </motion.div>
                   </div>
 
                   {/* Header Info */}
-                  <div className="flex items-start justify-between mb-3">
+                  <div className={`flex items-start justify-between ${isExpanded ? 'mb-3' : 'mb-2'}`}>
                     <div>
-                      <h2 className="mb-1 text-white">{currentClub.name}</h2>
+                      <h2 className={`text-white drop-shadow-lg font-bold ${isExpanded ? 'text-xl mb-1' : 'text-lg'}`}>{currentClub.name}</h2>
                     </div>
                   </div>
                   
-                  {/* Short Description */}
-                  <p className="text-white/90 text-sm mb-4">
-                    {currentClub.description}
-                  </p>
+                  {/* Short Description - only show truncated version when collapsed */}
+                  {!isExpanded && (
+                    <p className="text-white/95 text-sm mb-2 line-clamp-2 drop-shadow-md">
+                      {currentClub.description}
+                    </p>
+                  )}
                   
-                  {/* Vibe Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {currentClub.vibe.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-white/20 text-white border-white/30 text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
+                  {isExpanded && (
+                    <p className="text-white/90 text-sm mb-4">
+                      {currentClub.description}
+                    </p>
+                  )}
+                  
+                  {/* Vibe Tags - show fewer when collapsed */}
+                  {!isExpanded && (
+                    <div className="flex flex-wrap gap-2">
+                      {currentClub.vibe.slice(0, 3).map((tag) => (
+                        <Badge key={tag} variant="secondary" className="bg-white/30 backdrop-blur-sm text-white border-white/40 text-xs drop-shadow-md">
+                          {tag}
+                        </Badge>
+                      ))}
+                      {currentClub.vibe.length > 3 && (
+                        <Badge variant="secondary" className="bg-white/20 backdrop-blur-sm text-white/80 border-white/30 text-xs drop-shadow-md">
+                          +{currentClub.vibe.length - 3} more
+                        </Badge>
+                      )}
+                    </div>
+                  )}
+                  
+                  {isExpanded && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {currentClub.vibe.map((tag) => (
+                        <Badge key={tag} variant="secondary" className="bg-white/30 backdrop-blur-sm text-white border-white/40 text-xs drop-shadow-md">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Expanded Content */}
                   {isExpanded && (
