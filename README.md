@@ -1,5 +1,7 @@
 # AlignU - UBC Club Finder
 
+
+
 <div align="center">
   <h3>Discover your perfect club at UBC. Swipe through clubs and find your community.</h3>
   <p>Built with React, TypeScript, and AI-powered recommendations</p>
@@ -78,6 +80,9 @@ hackcamp2025/
 
 The app provides intelligent club recommendations based on your profile. Simply create your profile with your interests, major, bio, and what you're looking for, and you'll see clubs sorted by how well they match your preferences. The more details you add to your profile, the better the recommendations get.
 
+<img width="942" height="518" alt="image" src="https://github.com/user-attachments/assets/17957601-0b5d-4088-83a4-5f3bee4e18d4" />
+
+
 ## Available Scripts
 
 ```bash
@@ -126,7 +131,7 @@ See `DEPLOY.md` for detailed deployment instructions.
   - Business (BizTech, Finance, etc.)
   - Academic (Research, URO, etc.)
 
-The club database is regularly updated with new clubs and information.
+The club database comes from and is updated with the UBC AMS Clubs Directory: https://amsclubs.ca/all-clubs/
 
 ### Events
 - Events including:
@@ -135,7 +140,7 @@ The club database is regularly updated with new clubs and information.
   - Partying events (Koerner's House Party, Rush Hour, etc.)
   - UBC campus events
 
-The events database is continuously updated with upcoming events throughout the semester.
+The events database comes from and is updated with the UBC AMS Clubs Directory, as well: https://amsclubs.ca/all-events/
 
 ## Tech Stack
 
@@ -171,49 +176,9 @@ The events database is continuously updated with upcoming events throughout the 
 - Save and reset profile functionality
 - Profile data used for personalized recommendations
 
-## Adding New Clubs or Events
 
-### Adding Clubs
-1. Edit `club_info.json` in the root directory
-2. Add a new club object with:
-   ```json
-   {
-     "name": "Club Name",
-     "description": "Club description...",
-     "price": 0,
-     "contact": "https://www.instagram.com/clubhandle/",
-     "image": "club_image.png"
-   }
-   ```
-3. Add the club image to `Club Finder Website/public/images/`
-4. Copy `club_info.json` to `Club Finder Website/src/data/club_info.json`
 
-### Adding Events
-1. Edit `events_info.json` in the root directory
-2. Add a new event object with:
-   ```json
-   {
-     "clubName": "Event Organizer",
-     "eventName": "Event Name",
-     "date": "Nov 20, 2025",
-     "time": "7:00 PM",
-     "image": "event_image.jpg",
-     "description": "Event description...",
-     "price": "Free",
-     "tag": "club events",
-     "freeWithStudentID": true,
-     "rsvpLink": "https://..."
-   }
-   ```
-3. Copy `events_info.json` to `Club Finder Website/src/data/events_info.json`
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
@@ -224,9 +189,7 @@ This project is part of HackCamp 2025.
 - UBC clubs and organizations for providing information
 - All contributors and testers
 
-## Support
 
-For issues, questions, or contributions, please open an issue on GitHub.
 
 ---
 
