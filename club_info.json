@@ -288,16 +288,16 @@
     "contact": "https://www.instagram.com/fashionclububc/?hl=en%E2%80%9D"
   },
   {
-    "name": "Boxing Club",
-    "description": "UBC Boxing Club is a student group that teaches boxing fundamentals in a supportive, fitness-focused environment. Members learn proper technique such as footwork, punching form, defensive movements, and conditioning drills, with sessions designed for beginners as well as students who already have experience. The club emphasizes safety, discipline, and fitness rather than full-contact sparring, and it offers a structured way to build strength and confidence while training with others. It is a good place for students who want a challenging workout, want to improve their striking skills, or enjoy the community aspect of group training.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcboxingclub/?hl=en%E2%80%9D"
+    "name": "Blockchain",
+    "description": "UBC Blockchain Club is a student-led group at the University of British Columbia that focuses on education, innovation, and community around blockchain technology. They host workshops, talks, hackathons, and networking events that span topics from basic blockchain principles to advanced applications and Web3. The club welcomes students from all faculties who want to explore blockchain, build projects, meet like-minded peers, and connect with industry professionals.",
+    "price": 0,
+    "contact": "https://www.instagram.com/ubcblockchain/?hl=en%E2%80%9D"
   },
   {
-    "name": "Boxing Club",
-    "description": "UBC Boxing Club is a student group that teaches boxing fundamentals in a supportive, fitness-focused environment. Members learn proper technique such as footwork, punching form, defensive movements, and conditioning drills, with sessions designed for beginners as well as students who already have experience. The club emphasizes safety, discipline, and fitness rather than full-contact sparring, and it offers a structured way to build strength and confidence while training with others. It is a good place for students who want a challenging workout, want to improve their striking skills, or enjoy the community aspect of group training.",
-    "price": 10,
-    "contact": "https://www.instagram.com/ubcboxingclub/?hl=en%E2%80%9D"
+    "name": "AI Safety",
+    "description": "UBC AI Safety is a student-run initiative at the University of British Columbia dedicated to the study and practice of artificial intelligence safety. The group offers courses, policy reading groups, project opportunities, and a community space for students who want to explore how advanced AI systems might impact society and how to guide their safe development. Members learn about topics such as alignment, governance, risk assessment and work together on research or outreach aimed at making AI more beneficial and less harmful.",
+    "price": 0,
+    "contact": "https://www.instagram.com/ubcaisafety/%E2%80%9D"
   }
 
 ]
