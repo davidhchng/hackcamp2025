@@ -7,21 +7,20 @@
 
 ---
 
-## 🌟 Features
+## Features
 
-- **🎯 AI-Powered Recommendations** - Get personalized club suggestions based on your profile using ChatGPT
-- **💫 Swipe Interface** - Tinder-style swiping experience to discover clubs
-- **📅 Event Discovery** - Browse and filter UBC events by category (UBC Events, Athletics, Club Events, Partying Events)
-- **❤️ Save Favorites** - Like clubs and view your matches
-- **👤 Profile Creation** - Build your profile with interests, major, bio, and more
-- **🔗 Direct Links** - Connect with clubs via Instagram and RSVP to events
+- **Personalized Recommendations** - Get club suggestions tailored to your interests and profile
+- **Swipe Interface** - Browse clubs with an intuitive swipe experience
+- **Event Discovery** - Find and filter UBC events by category (UBC Events, Athletics, Club Events, Partying Events)
+- **Save Favorites** - Like clubs and keep track of your matches
+- **Profile Creation** - Build your profile with interests, major, bio, and more
+- **Direct Links** - Connect with clubs via Instagram and RSVP to events
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
 - Node.js 18+ and npm
-- (Optional) OpenAI API key for AI recommendations
 
 ### Installation
 
@@ -46,7 +45,7 @@
    - The app will automatically open at `http://localhost:3000`
    - Or manually navigate to the URL shown in your terminal
 
-## 🎨 Project Structure
+## Project Structure
 
 ```
 hackcamp2025/
@@ -60,8 +59,8 @@ hackcamp2025/
 │   │   │   ├── LikedClubsPage.tsx # Saved clubs
 │   │   │   └── ui/               # Reusable UI components
 │   │   ├── data/                 # Data files
-│   │   │   ├── club_info.json    # Club database (56 clubs)
-│   │   │   ├── events_info.json  # Events database (87 events)
+│   │   │   ├── club_info.json    # Club database
+│   │   │   ├── events_info.json  # Events database
 │   │   │   └── mockData.ts      # Data processing utilities
 │   │   ├── utils/                # Utility functions
 │   │   │   ├── chatgptApi.ts    # AI recommendation engine
@@ -75,34 +74,11 @@ hackcamp2025/
 └── README.md                    # This file
 ```
 
-## 🤖 AI-Powered Recommendations (Optional)
+## Personalized Recommendations
 
-The app uses ChatGPT to provide intelligent club recommendations based on your profile.
+The app provides intelligent club recommendations based on your profile. Simply create your profile with your interests, major, bio, and what you're looking for, and you'll see clubs sorted by how well they match your preferences. The more details you add to your profile, the better the recommendations get.
 
-### Setup
-
-**Option 1: Environment Variable (Recommended)**
-1. Create a `.env` file in the `Club Finder Website` directory:
-   ```bash
-   VITE_OPENAI_API_KEY=your_openai_api_key_here
-   ```
-2. Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
-3. Restart the dev server
-
-**Option 2: In-App (Development Only)**
-- The API key can be stored in browser localStorage
-- Note: This is for development only and not recommended for production
-
-### How It Works
-
-1. Create your profile with interests, major, bio, and what you're looking for
-2. The AI analyzes your profile against all 56 clubs
-3. Clubs are sorted by relevance score (0-100)
-4. You see the most relevant clubs first in the swipe interface
-
-**Note:** Without an API key, clubs are shown in their original order.
-
-## 📦 Available Scripts
+## Available Scripts
 
 ```bash
 # Start development server
@@ -117,7 +93,7 @@ npm run build
 npm run preview
 ```
 
-## 🌐 Deployment
+## Deployment
 
 ### GitHub Pages
 
@@ -140,24 +116,28 @@ The project is configured for automatic deployment to GitHub Pages.
 
 See `DEPLOY.md` for detailed deployment instructions.
 
-## 📊 Data
+## Data
 
 ### Clubs
-- **56 clubs** across various categories:
+- Clubs across various categories including:
   - Sports (Squash, Disc Golf, etc.)
   - STEM (Statistics, AI, Data Science, etc.)
   - Culture (Chinese, Japanese, Korean, etc.)
   - Business (BizTech, Finance, etc.)
   - Academic (Research, URO, etc.)
 
+The club database is regularly updated with new clubs and information.
+
 ### Events
-- **87 events** including:
-  - UBC Athletics games (74 events)
+- Events including:
+  - UBC Athletics games
   - Club events (datathons, competitions, etc.)
   - Partying events (Koerner's House Party, Rush Hour, etc.)
   - UBC campus events
 
-## 🛠️ Tech Stack
+The events database is continuously updated with upcoming events throughout the semester.
+
+## Tech Stack
 
 - **Frontend Framework:** React 18 with TypeScript
 - **Build Tool:** Vite 6
@@ -165,14 +145,13 @@ See `DEPLOY.md` for detailed deployment instructions.
 - **UI Components:** Radix UI + Custom components
 - **Animations:** Framer Motion
 - **Routing:** React Router (HashRouter for GitHub Pages)
-- **AI Integration:** OpenAI GPT-4o-mini API
 - **State Management:** React Hooks + localStorage
 
-## 🎯 Key Features Explained
+## Key Features Explained
 
 ### Swipe Interface
-- Swipe right (or click ❤️) to like a club
-- Swipe left (or click ✖️) to pass
+- Swipe right (or click the heart button) to like a club
+- Swipe left (or click the X button) to pass
 - View detailed information by clicking on the card
 - Expandable card view with full club details
 
@@ -185,14 +164,14 @@ See `DEPLOY.md` for detailed deployment instructions.
 - Create a comprehensive profile with:
   - Bio and personal description
   - Major selection
-  - Adjectives (5 words that describe you)
-  - Passions (5 interests)
+  - Adjectives (words that describe you)
+  - Passions (your interests)
   - What you're looking for
   - Gender pronouns (optional)
 - Save and reset profile functionality
-- Profile data used for AI recommendations
+- Profile data used for personalized recommendations
 
-## 📝 Adding New Clubs or Events
+## Adding New Clubs or Events
 
 ### Adding Clubs
 1. Edit `club_info.json` in the root directory
@@ -228,7 +207,7 @@ See `DEPLOY.md` for detailed deployment instructions.
    ```
 3. Copy `events_info.json` to `Club Finder Website/src/data/events_info.json`
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -236,23 +215,22 @@ See `DEPLOY.md` for detailed deployment instructions.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is part of HackCamp 2025.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - UBC clubs and organizations for providing information
-- OpenAI for the ChatGPT API
 - All contributors and testers
 
-## 📞 Support
+## Support
 
 For issues, questions, or contributions, please open an issue on GitHub.
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ for UBC students</p>
+  <p>Made for UBC students</p>
   <p>Find your community. Discover your passion. Join AlignU.</p>
 </div>
