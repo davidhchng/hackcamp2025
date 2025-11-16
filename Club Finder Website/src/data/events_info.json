@@ -1,17 +1,5 @@
 [
   {
-    "clubName": "UBC Events",
-    "eventName": "Welcome Week Block Party",
-    "date": "Nov 18, 2025",
-    "time": "6:00 PM",
-    "image": "https://images.unsplash.com/photo-1618073194229-5d838801b389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYW1wdXMlMjBwYXJ0eSUyMGNlbGVicmF0aW9ufGVufDF8fHx8MTc2MzI2Mzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "description": "Kick off the semester with food trucks, live music, and activities on the main quad!",
-    "price": "Free with student ID",
-    "tag": "UBC events",
-    "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
-  },
-  {
     "clubName": "UBC Athletics",
     "eventName": "Thunderbirds vs Huskies - Basketball",
     "date": "Nov 19, 2025",
@@ -33,7 +21,7 @@
     "price": "Free with student ID",
     "tag": "UBC events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "AMS Events",
@@ -45,7 +33,7 @@
     "price": "Free with student ID",
     "tag": "partying events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "UBC Library",
@@ -57,7 +45,7 @@
     "price": "Free with student ID",
     "tag": "UBC events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "UBC Arts",
@@ -69,7 +57,7 @@
     "price": "Free with student ID",
     "tag": "UBC events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "Soccer Club",
@@ -81,7 +69,7 @@
     "price": "Free with student ID",
     "tag": "club events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "Debate Society",
@@ -93,7 +81,7 @@
     "price": "Free with student ID",
     "tag": "club events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "Drama Club",
@@ -105,7 +93,7 @@
     "price": "Free with student ID",
     "tag": "club events",
     "freeWithStudentID": true,
-    "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+    "rsvpLink": ""
   },
   {
     "clubName": "UBC Athletics",
@@ -241,11 +229,11 @@
   },
   {
     "clubName": "UBC Athletics",
-    "eventName": "Men's Soccer vs Université de Montréal",
+    "eventName": "Men's Soccer vs Universit\u00e9 de Montr\u00e9al",
     "date": "Nov 6, 2025",
     "time": "10:30 AM",
     "image": "Thunderbirds_Example1_770x380.jpg",
-    "description": "Men's Soccer vs Université de Montréal in Toronto, Ont. Result: L 1-2 (U SPORTS Men's Soccer Championship).",
+    "description": "Men's Soccer vs Universit\u00e9 de Montr\u00e9al in Toronto, Ont. Result: L 1-2 (U SPORTS Men's Soccer Championship).",
     "price": "Free with student ID",
     "tag": "UBC athletics",
     "freeWithStudentID": true,
@@ -277,11 +265,11 @@
   },
   {
     "clubName": "UBC Athletics",
-    "eventName": "Women's Soccer vs Université Laval",
+    "eventName": "Women's Soccer vs Universit\u00e9 Laval",
     "date": "Nov 7, 2025",
     "time": "2:00 PM",
     "image": "Thunderbirds_Example1_770x380.jpg",
-    "description": "Women's Soccer vs Université Laval in Hamilton, Ont. Result: W 3-2 (U SPORTS Women's Soccer Championship).",
+    "description": "Women's Soccer vs Universit\u00e9 Laval in Hamilton, Ont. Result: W 3-2 (U SPORTS Women's Soccer Championship).",
     "price": "Free with student ID",
     "tag": "UBC athletics",
     "freeWithStudentID": true,
@@ -469,11 +457,11 @@
   },
   {
     "clubName": "UBC Athletics",
-    "eventName": "Women's Soccer vs Université de Montréal",
+    "eventName": "Women's Soccer vs Universit\u00e9 de Montr\u00e9al",
     "date": "Nov 9, 2025",
     "time": "4:30 PM",
     "image": "Thunderbirds_Example1_770x380.jpg",
-    "description": "Women's Soccer vs Université de Montréal in Hamilton, Ont. Result: L 1-2 (U SPORTS Women's Soccer Championship).",
+    "description": "Women's Soccer vs Universit\u00e9 de Montr\u00e9al in Hamilton, Ont. Result: L 1-2 (U SPORTS Women's Soccer Championship).",
     "price": "Free with student ID",
     "tag": "UBC athletics",
     "freeWithStudentID": true,
@@ -481,11 +469,11 @@
   },
   {
     "clubName": "UBC Athletics",
-    "eventName": "Men's Rugby vs Université de Montréal",
+    "eventName": "Men's Rugby vs Universit\u00e9 de Montr\u00e9al",
     "date": "Nov 12, 2025",
     "time": "1:00 PM",
     "image": "Thunderbirds_Example1_770x380.jpg",
-    "description": "Men's Rugby vs Université de Montréal in Montreal, Que. Result: W 40-0 (Canadian University Men's Rugby Championship).",
+    "description": "Men's Rugby vs Universit\u00e9 de Montr\u00e9al in Montreal, Que. Result: W 40-0 (Canadian University Men's Rugby Championship).",
     "price": "Free with student ID",
     "tag": "UBC athletics",
     "freeWithStudentID": true,
@@ -982,5 +970,77 @@
     "tag": "UBC athletics",
     "freeWithStudentID": true,
     "rsvpLink": "https://gothunderbirds.ca/sports/2021/9/14/ticketing-details-2025-26.aspx"
+  },
+  {
+    "clubName": "The Calendar",
+    "eventName": "Koerner's House Party",
+    "date": "Nov 15, 2025",
+    "time": "9:00 PM - 1:00 AM",
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop",
+    "description": "Y'all absolutely killed it for Halloween, hope reading break is treating you well, rest up, because the party NEVER STOPS. Get ready for the LAST KHP OF THE SEMESTER! Features: House Party Vibes, Lit up Outdoor Dance Tent, Open Air Backyard Patio, ON CAMPUS LOCATION, BEER PONG.",
+    "price": "$7-$14",
+    "tag": "partying events",
+    "freeWithStudentID": false,
+    "rsvpLink": "https://thecalendar.myshopify.com/products/the-calendar-reading-break-reunion-koerners-house-party-19-2025?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+  },
+  {
+    "clubName": "USS x WiDS",
+    "eventName": "WIDS x USS Dataverse Datathon",
+    "date": "Nov 16, 2025",
+    "time": "9:00 AM - 8:00 PM",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "description": "Join WiDS@UBC and USS for a beginner-friendly 1-day datathon packed with coding, insights, snacks, and fun! Our data cleaning, analysis, and visualization workshops will guide you through all the basics on how to analyse a case and present your findings!",
+    "price": "Free",
+    "tag": "club events",
+    "freeWithStudentID": true,
+    "rsvpLink": "https://www.instagram.com/p/DQ7kDlpEjU2/"
+  },
+  {
+    "clubName": "UBC DSCI Club",
+    "eventName": "DataQuest Datathon",
+    "date": "Nov 17, 2025",
+    "time": "9:00 AM - 5:00 PM",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "description": "Curious about data but don't know where to start? DataQuest is your chance to learn, create, and collaborate, without any experience required! UBC Dsci Club membership required to sign up.",
+    "price": "$10",
+    "tag": "club events",
+    "freeWithStudentID": false,
+    "rsvpLink": "https://www.instagram.com/p/DQ5kW7qgRL-/?img_index=1"
+  },
+  {
+    "clubName": "CVC \u2022 HKSA \u2022 CSA \u2022 JAPAN \u2022 TAIWAN",
+    "eventName": "Rush Hour '25",
+    "date": "Nov 21, 2025",
+    "time": "9:30 PM - 2:00 AM",
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop",
+    "description": "The BIGGEST collab on campus. All genres (yes, including K-Pop + EDM). Insane energy, crazy d\u00e9cor, DJs, and song requests, custom themed drinks \u2014 we're going ALL OUT. 19+ 2 PIECES OF ID required.",
+    "price": "$10-$18",
+    "tag": "partying events",
+    "freeWithStudentID": false,
+    "rsvpLink": "https://www.bouncelife.com/events/68fea46f7e2490cfc5a79500"
+  },
+  {
+    "clubName": "UBC BizTech",
+    "eventName": "KickStart",
+    "date": "Nov 19-26, 2025",
+    "time": "All Day",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    "description": "KickStart is a week-long startup competition hosted by UBC BizTech. Participants work in teams to identify a real problem, validate a solution through user feedback, and build a functional prototype or MVP. Throughout the week, teams receive mentorship from founders and industry professionals before launching publicly in a massive science-fair style showcase. At the end, they'll demo their progress to a panel of judges and compete for a $1000 grand prize.",
+    "price": "Free",
+    "tag": "club events",
+    "freeWithStudentID": true,
+    "rsvpLink": "https://www.instagram.com/p/DQuv6ZsEmeG/"
+  },
+  {
+    "clubName": "UBC Startups",
+    "eventName": "The Crisis Room Challenge",
+    "date": "Nov 24, 2025",
+    "time": "6:00 PM - 9:00 PM",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "description": "A crisis doesn't knock \u2014 it detonates. On November 24th, the room won't be calm. It won't be quiet. It will be chaos: collapsing systems, breaking news alerts, impossible decisions stacking faster than you can process. And you will be the one expected to lead through it. Welcome to The Crisis Room Challenge, where startups face the kind of pressure founders talk about years later. Only the sharpest decisions survive. Test your survival skills and register for the Crisis Room Challenge using our link in bio.",
+    "price": "Free",
+    "tag": "club events",
+    "freeWithStudentID": true,
+    "rsvpLink": "https://www.instagram.com/p/DRGkPKCkYYv/"
   }
 ]

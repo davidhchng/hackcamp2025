@@ -28,13 +28,6 @@
         "image": "csa.png"
     },
     {
-        "name": "Stem Fellowship",
-        "description": "STEM Fellowship is a student-run, national organization that provides a platform for students interested in STEM fields to connect with one another and with professionals, engage in research and improve skills in scholarly writing. We seek to enable students to learn collaboratively, express their passion and love for science, and expand the scope of human knowledge through scientific, multidisciplinary inquiry. It involves research opportunities, mentorship opportunities, and chances to work with a team in STEM based ventures.",
-        "price": 2,
-        "contact": "https://www.instagram.com/ubcstemfellowship/",
-        "image": "stem_fellow.png"
-    },
-    {
         "name": "nwPlus",
         "description": "nwPlus is a student-led club supporting aspiring programmers and designers, based out of University of British Columbia. Our mission is to foster innovation and creativity in tech for students to connect with passionate peers and mentors, through events such as our annual hackathons. By providing the right tools, resources, and support, the team at nwPlus aims to encourage students to gain hands-on experience with cutting-edge technology outside of classroom settings.",
         "price": 0,
@@ -54,13 +47,6 @@
         "price": 10,
         "contact": "https://www.instagram.com/ubcbiztech/%E2%80%9D",
         "image": "biztech.png"
-    },
-    {
-        "name": "UX Hub",
-        "description": "UBC UX Hub is a community for students who want to explore or grow in user experience design, whether you're a complete beginner or already building projects. The club focuses on helping students gain practical skills through workshops, design challenges, mentorship, and team projects that feel close to real industry work. They also bring in designers and product professionals for panels and networking, which makes it easier to learn what UX careers actually look like. If you're considering joining, UX Hub is a place to meet other creative and tech-minded students, build a portfolio, and get experience that can help in internships or future design roles.",
-        "price": 10,
-        "contact": "https://www.instagram.com/ubcuxhub/%E2%80%9D",
-        "image": "uxhub.png"
     },
     {
         "name": "Japan Association",
@@ -119,13 +105,6 @@
         "image": "muslim.png"
     },
     {
-        "name": "UBC Startups",
-        "description": "UBC Startups is a student-driven entrepreneurial community at University of British Columbia that brings together students from all majors who are interested in building startups, exploring business ideas, or learning about innovation and venture creation. The club runs events like pitch nights, founder talks, networking sessions, and workshops where you can meet peers with ideas, get feedback, and team up on side-projects or early-stage ventures. Whether you already have a concept or are just curious about entrepreneurship, UBC Startups offers a space to learn startup tools, connect with the local Vancouver tech and investor scene, and experiment with launching something outside the classroom.",
-        "price": 0,
-        "contact": "https://www.instagram.com/ubcstartups/",
-        "image": "ubcstart.png"
-    },
-    {
         "name": "New Taiwanese Generation",
         "description": "New Taiwanese Generation is one of the established Taiwanese clubs at UBC. We are a half cultural / half social club, seeking to bring Taiwanese culture to our UBC campus and pushing to break social barriers between individuals. New Taiwanese Generation (NTG) is a Taiwanese cultural club located at the University of British Columbia - Vancouver campus. NTG has been operated by student volunteers and has attracted more than 1000 members since it was established in 1998. At NTG, we strive to help students adjust to university life, make meaningful relationships, and create memorable experiences.",
         "price": 15,
@@ -147,13 +126,6 @@
         "image": "persian.png"
     },
     {
-        "name": "Undergraduate Research Opportunities",
-        "description": "URO is a student-run club that helps undergraduates access and succeed in research across all disciplines. It offers mentorship through programs like REX (Research Experience), hosts events such as research fairs and poster sessions, and connects students with supervisors, labs, and publishing opportunities. Whether you’re just curious about research or ready to join a project, URO provides structured steps — peer support, workshops, and networking — to help you get involved and build your research portfolio",
-        "price": 10,
-        "contact": "https://www.instagram.com/uro_ubc/%E2%80%9D",
-        "image": "URO.png"
-    },
-    {
         "name": "Singapore Students Association",
         "description": "The UBC Singapore Students Association is a sociocultural club at the University of British Columbia (Vancouver) that is comprised of Singaporeans and UBC students interested in Singaporean culture. As a club, we strive to build a strong, lasting and welcoming community. Throughout the school year, we seek to foster friendships among our members, provide a support base for Singaporean students, and offer our members various unique opportunities and experiences. Our members are from all over the world and from all walks of life, and we welcome anyone and everyone to be a part of our community!",
         "price": 10,
@@ -169,7 +141,7 @@
     },
     {
         "name": "K-WAVE",
-        "description": " K-Wave is UBC's first and only Korean entertainment club open to anyone interested in Korean culture. Located at University of British Columbia's Vancouver campus, K-Wave was founded in Spring 2012. Since its founding, the club has provided various events year-round, open to both members and non-members.",
+        "description": "K-Wave is UBC's first and only Korean entertainment club open to anyone interested in Korean culture. Located at University of British Columbia's Vancouver campus, K-Wave was founded in Spring 2012. Since its founding, the club has provided various events year-round, open to both members and non-members.",
         "price": 13,
         "contact": "https://www.instagram.com/ubckwave/",
         "image": "kwave.png"
@@ -187,13 +159,6 @@
         "price": 12,
         "contact": "https://www.instagram.com/ubcvsa/?hl=en",
         "image": "Viet.png"
-    },
-    {
-        "name": "Women in Computer Science",
-        "description": "WiCS (Women in Computer Science) at UBC is a student group that supports women and gender-diverse students interested in computing. The club focuses on building community, offering mentorship, and creating opportunities for students to grow their technical and professional skills. They run workshops, study sessions, networking events, speaker panels, and outreach programs that help members explore computer science in a supportive environment. WiCS also works to make the broader CS community more inclusive and encourages students at all levels to connect, collaborate, and gain confidence in their technical journeys.",
-        "price": 0,
-        "contact": "https://www.instagram.com/ubcwics/%E2%80%9D",
-        "image": "WICS.png"
     },
     {
         "name": "Product Management Club",

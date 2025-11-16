@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, User, Plus, X, Save, Sparkles, Check, ChevronsUpDown, Target } from "lucide-react";
+import { ArrowLeft, User, Plus, X, Save, Sparkles, Check, ChevronsUpDown, Target, RotateCcw } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -198,6 +198,21 @@ export function ProfilePage() {
     localStorage.setItem("alignu_profile", JSON.stringify(profile));
     setIsSaved(true);
     setTimeout(() => setIsSaved(false), 2000);
+  };
+
+  const handleReset = () => {
+    if (window.confirm("Are you sure you want to reset your profile? This will clear all your saved information.")) {
+      localStorage.removeItem("alignu_profile");
+      setProfile({
+        adjectives: ["", "", "", "", ""],
+        passions: ["", "", "", "", ""],
+        major: "",
+        bio: "",
+        lookingFor: "",
+        genderPronouns: "",
+      });
+      setIsSaved(false);
+    }
   };
 
   const clearAdjective = (index: number) => {
@@ -551,12 +566,12 @@ export function ProfilePage() {
             </Card>
           </motion.div>
 
-          {/* Save Button */}
+          {/* Save and Reset Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="sticky bottom-6"
+            className="sticky bottom-6 space-y-3"
           >
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Button
@@ -583,6 +598,16 @@ export function ProfilePage() {
                     <span>Save Profile</span>
                   </div>
                 )}
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <Button
+                onClick={handleReset}
+                variant="outline"
+                className="w-full border-red-300 text-red-600 hover:bg-red-50 h-12"
+              >
+                <RotateCcw className="w-4 h-4 mr-2" />
+                <span>Reset Profile</span>
               </Button>
             </motion.div>
           </motion.div>

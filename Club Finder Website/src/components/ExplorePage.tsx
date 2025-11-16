@@ -14,7 +14,16 @@ export function ExplorePage() {
 
   const filteredEvents = filter === "all" 
     ? events 
-    : events.filter(e => e.clubName === filter);
+    : events.filter(e => {
+        // Map filter button labels to tag values
+        const tagMap: { [key: string]: string } = {
+          "UBC Events": "UBC events",
+          "UBC Athletics": "UBC athletics",
+          "Partying Events": "partying events",
+          "Club Events": "club events"
+        };
+        return e.tag === tagMap[filter] || e.tag === filter;
+      });
 
   return (
     <div className="min-h-screen bg-white">
@@ -153,9 +162,17 @@ export function ExplorePage() {
                       </div>
 
                       <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                          RSVP
-                        </Button>
+                        {event.rsvpLink ? (
+                          <a href={event.rsvpLink} target="_blank" rel="noopener noreferrer">
+                            <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                              RSVP
+                            </Button>
+                          </a>
+                        ) : (
+                          <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" disabled>
+                            RSVP
+                          </Button>
+                        )}
                       </motion.div>
                     </CardContent>
                   </Card>

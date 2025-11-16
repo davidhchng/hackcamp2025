@@ -4,6 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
+    base: process.env.NODE_ENV === 'production' ? '/hackcamp2025/' : '/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -52,6 +53,7 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      assetsDir: 'assets',
     },
     server: {
       port: 3000,

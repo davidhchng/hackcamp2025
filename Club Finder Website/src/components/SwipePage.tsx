@@ -362,22 +362,21 @@ export function SwipePage() {
         <div className="w-10" />
       </div>
 
-      {/* Swipe Counter */}
-      <div className="text-center mb-4">
-        <p className="text-gray-600">
-          {currentIndex + 1} / {sortedClubs.length}
-        </p>
-        {profile && useChatGPT && (
-          <p className="text-xs text-gray-400 mt-1">
+      {/* AI Status Indicator */}
+      {profile && useChatGPT && (
+        <div className="text-center mb-4">
+          <p className="text-xs text-gray-400">
             ✨ AI-powered recommendations
           </p>
-        )}
-        {profile && !useChatGPT && (
-          <p className="text-xs text-yellow-600 mt-1">
+        </div>
+      )}
+      {profile && !useChatGPT && (
+        <div className="text-center mb-4">
+          <p className="text-xs text-yellow-600">
             ⚠️ AI recommendations unavailable - showing all clubs
           </p>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Card Stack */}
       <div className="flex justify-center items-start px-6 py-8">
