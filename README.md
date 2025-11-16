@@ -80,7 +80,7 @@ hackcamp2025/
 
 The app provides intelligent club recommendations based on your profile. Simply create your profile with your interests, major, bio, and what you're looking for, and you'll see clubs sorted by how well they match your preferences. The more details you add to your profile, the better the recommendations get.
 
-<img width="942" height="518" alt="image" src="https://github.com/user-attachments/assets/17957601-0b5d-4088-83a4-5f3bee4e18d4" />
+
 
 
 ## Available Scripts
@@ -160,10 +160,16 @@ The events database comes from and is updated with the UBC AMS Clubs Directory, 
 - View detailed information by clicking on the card
 - Expandable card view with full club details
 
+<img width="1198" height="600" alt="Screenshot 2025-11-16 at 10 46 52 AM" src="https://github.com/user-attachments/assets/0f7bf12d-b62b-43b8-82b0-810ca56fa17c" />
+
+
 ### Event Filtering
 - Filter by category: All Events, UBC Events, UBC Athletics, Club Events, Partying Events
 - Click RSVP buttons to register (opens in new tab)
 - View event details, dates, times, and pricing
+
+<img width="1069" height="685" alt="Screenshot 2025-11-16 at 10 45 31 AM" src="https://github.com/user-attachments/assets/0eb5822f-c27f-4577-aace-9be104b94a37" />
+
 
 ### Profile System
 - Create a comprehensive profile with:
@@ -176,7 +182,7 @@ The events database comes from and is updated with the UBC AMS Clubs Directory, 
 - Save and reset profile functionality
 - Profile data used for personalized recommendations
 
-
+<img width="942" height="518" alt="image" src="https://github.com/user-attachments/assets/17957601-0b5d-4088-83a4-5f3bee4e18d4" />
 
 
 
