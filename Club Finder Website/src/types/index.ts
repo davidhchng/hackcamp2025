@@ -23,4 +23,7 @@ export interface Event {
   image: string;
   description: string;
   price: string;
+  tag: string;
+  freeWithStudentID?: boolean;
+  rsvpLink?: string;
 }

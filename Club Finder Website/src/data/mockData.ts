@@ -1,5 +1,6 @@
 import { Club, Event } from "../types";
 import clubInfoData from "./club_info.json";
+import eventsInfoData from "./events_info.json";
 
 // Helper function to determine club type based on name and description
 function getClubType(name: string, description: string): string {
@@ -135,10 +136,30 @@ function convertToClubs(jsonData: any[]): Club[] {
       const rating = 4.3 + (seed % 7) * 0.1; // 4.3 to 4.9
       const members = 20 + (seed % 80); // 20 to 100
       
+      // Use image from JSON if provided (URL or local path), otherwise fall back to getImageUrl
+      let imageUrl: string;
+      if (club.image) {
+        // If it's a full URL, use it directly
+        if (club.image.startsWith('http://') || club.image.startsWith('https://')) {
+          imageUrl = club.image;
+        } 
+        // If it starts with /, it's already a path from root
+        else if (club.image.startsWith('/')) {
+          imageUrl = club.image;
+        }
+        // Otherwise, treat it as a filename in the public/images folder
+        else {
+          imageUrl = `/images/${club.image}`;
+        }
+      } else {
+        // Fall back to the existing getImageUrl function
+        imageUrl = getImageUrl(club.name, type);
+      }
+      
       return {
         id: `club-${index + 1}`,
         name: club.name,
-        image: getImageUrl(club.name, type),
+        image: imageUrl,
         description: club.description.substring(0, 150) + (club.description.length > 150 ? "..." : ""),
         type,
         location,
@@ -155,98 +176,46 @@ function convertToClubs(jsonData: any[]): Club[] {
 
 export const clubs: Club[] = convertToClubs(clubInfoData);
 
-export const events: Event[] = [
-  {
-    id: "1",
-    clubName: "UBC Events",
-    eventName: "Welcome Week Block Party",
-    date: "Nov 18, 2025",
-    time: "6:00 PM",
-    image: "https://images.unsplash.com/photo-1618073194229-5d838801b389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYW1wdXMlMjBwYXJ0eSUyMGNlbGVicmF0aW9ufGVufDF8fHx8MTc2MzI2Mzc4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Kick off the semester with food trucks, live music, and activities on the main quad!",
-    price: "Free"
-  },
-  {
-    id: "2",
-    clubName: "UBC Athletics",
-    eventName: "Thunderbirds vs Huskies - Basketball",
-    date: "Nov 19, 2025",
-    time: "7:00 PM",
-    image: "https://images.unsplash.com/photo-1650124077853-b6fcb0231cc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBnYW1lJTIwc3RhZGl1bXxlbnwxfHx8fDE3NjMyNTI1NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Cheer on the Thunderbirds as they take on the Huskies in this exciting rivalry game!",
-    price: "Free with ID"
-  },
-  {
-    id: "3",
-    clubName: "UBC Career Services",
-    eventName: "Fall Career Fair 2025",
-    date: "Nov 20, 2025",
-    time: "10:00 AM",
-    image: "https://images.unsplash.com/photo-1762330472769-cb8e6c8324d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJlZXIlMjBmYWlyJTIwbmV0d29ya2luZ3xlbnwxfHx8fDE3NjMyNjM3ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Meet with 100+ employers and explore internship and full-time opportunities.",
-    price: "Free"
-  },
-  {
-    id: "4",
-    clubName: "AMS Events",
-    eventName: "Outdoor Movie Night: Barbie",
-    date: "Nov 21, 2025",
-    time: "8:00 PM",
-    image: "https://images.unsplash.com/photo-1574504212584-29a03eb6e41e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jZXJ0JTIwb3V0ZG9vciUyMGZlc3RpdmFsfGVufDF8fHx8MTc2MzI2Mzc4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Grab a blanket and enjoy a free outdoor screening under the stars on the main quad.",
-    price: "Free"
-  },
-  {
-    id: "5",
-    clubName: "UBC Library",
-    eventName: "Finals Study Marathon",
-    date: "Nov 22, 2025",
-    time: "8:00 AM",
-    image: "https://images.unsplash.com/photo-1589872880544-76e896b0592c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkeSUyMGdyb3VwJTIwbGlicmFyeXxlbnwxfHx8fDE3NjMxODkyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "24-hour study session with free coffee, snacks, and quiet study spaces throughout the library.",
-    price: "Free"
-  },
-  {
-    id: "6",
-    clubName: "UBC Arts",
-    eventName: "Student Art Exhibition Opening",
-    date: "Nov 23, 2025",
-    time: "5:00 PM",
-    image: "https://images.unsplash.com/photo-1632834380561-d1e05839a33a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwc3R1ZGVudHN8ZW58MXx8fHwxNzYzMTkyMDA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Celebrate student creativity at the opening reception for our annual art exhibition.",
-    price: "Free"
-  },
-  {
-    id: "7",
-    clubName: "Soccer Club",
-    eventName: "Regional Tournament Finals",
-    date: "Nov 24, 2025",
-    time: "2:00 PM",
-    image: "https://images.unsplash.com/photo-1721441904808-6f2c4c116d2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjB0ZWFtJTIwdW5pdmVyc2l0eXxlbnwxfHx8fDE3NjMyNjMyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Cheer on our soccer club as they compete in the regional finals. Free entry for all students!",
-    price: "Free"
-  },
-  {
-    id: "8",
-    clubName: "Debate Society",
-    eventName: "Oxford-Style Debate Night",
-    date: "Nov 25, 2025",
-    time: "7:00 PM",
-    image: "https://images.unsplash.com/photo-1745078535555-05d259fe826f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWJhdGUlMjBjbHViJTIwc3R1ZGVudHN8ZW58MXx8fHwxNzYzMjYzMjMyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Join us for an engaging Oxford-style debate on current events. Audience participation encouraged!",
-    price: "Free"
-  },
-  {
-    id: "9",
-    clubName: "Drama Club",
-    eventName: "Fall Play: Hamlet",
-    date: "Nov 26, 2025",
-    time: "8:00 PM",
-    image: "https://images.unsplash.com/photo-1630050525402-06c617847d27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFtYSUyMHRoZWF0cmUlMjBzdHVkZW50c3xlbnwxfHx8fDE3NjMyNjMyMzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    description: "Experience Shakespeare's classic tragedy performed by our talented drama students.",
-    price: "$5"
-  }
-];
+// Convert JSON data to Event format
+function convertToEvents(jsonData: any[]): Event[] {
+  return jsonData.map((event, index) => {
+    // Handle image path similar to clubs
+    let imageUrl: string;
+    if (event.image) {
+      // If it's a full URL, use it directly
+      if (event.image.startsWith('http://') || event.image.startsWith('https://')) {
+        imageUrl = event.image;
+      } 
+      // If it starts with /, it's already a path from root
+      else if (event.image.startsWith('/')) {
+        imageUrl = event.image;
+      }
+      // Otherwise, treat it as a filename in the public/images folder
+      else {
+        imageUrl = `/images/${event.image}`;
+      }
+    } else {
+      // Fall back to default image
+      imageUrl = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop";
+    }
+    
+    return {
+      id: `event-${index + 1}`,
+      clubName: event.clubName || "Unknown",
+      eventName: event.eventName || "Untitled Event",
+      date: event.date || "",
+      time: event.time || "",
+      image: imageUrl,
+      description: event.description || "",
+      price: event.price || "Free",
+      tag: event.tag || "UBC events",
+      freeWithStudentID: event.freeWithStudentID || false,
+      rsvpLink: event.rsvpLink || ""
+    };
+  });
+}
+
+export const events: Event[] = convertToEvents(eventsInfoData);
 
 export const interests = [
   "Sports", "Soccer", "Basketball", "Tennis", "Swimming",

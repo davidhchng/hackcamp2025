@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, useMotionValue, useTransform, AnimatePresence } from "motion/react";
-import { X, Heart, Star, MapPin, ArrowLeft, Users, Clock, Mail, Info, ChevronDown, Tag, Sparkles, Loader2, Instagram } from "lucide-react";
+import { X, Heart, ArrowLeft, Clock, Mail, Info, ChevronDown, Tag, Loader2, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Progress } from "./ui/progress";
@@ -289,28 +289,11 @@ export function SwipePage() {
           className="w-full max-w-md"
         >
           <div className="text-center space-y-6">
-            {/* Icon */}
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
-              className="flex justify-center"
-            >
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                >
-                  <Sparkles className="w-12 h-12 text-white" />
-                </motion.div>
-              </div>
-            </motion.div>
-
             {/* Title */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.1 }}
             >
               <h2 className="text-2xl font-semibold text-gray-900 mb-2">
                 Analyzing Your Profile
@@ -324,12 +307,12 @@ export function SwipePage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.2 }}
               className="space-y-3"
             >
               <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden shadow-inner">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"
+                  className="h-full bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-full"
                   initial={{ width: "0%" }}
                   animate={{ width: `${progress}%` }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
@@ -344,7 +327,7 @@ export function SwipePage() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.3 }}
               className="space-y-2 pt-4 min-h-[24px]"
             >
               <AnimatePresence mode="wait">
@@ -486,13 +469,6 @@ export function SwipePage() {
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <h2 className="mb-1 text-white">{currentClub.name}</h2>
-                      <div className="flex items-center gap-2 text-white/90 text-sm">
-                        <MapPin className="w-4 h-4" />
-                        <span>{currentClub.location}</span>
-                        <span className="mx-2">•</span>
-                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        <span>{currentClub.rating}</span>
-                      </div>
                     </div>
                   </div>
                   
@@ -528,14 +504,6 @@ export function SwipePage() {
                           <p className="text-white/80 text-sm pl-6">
                             {currentClub.details}
                           </p>
-                        </div>
-                      )}
-
-                      {/* Members */}
-                      {currentClub.members && (
-                        <div className="flex items-center gap-2 text-white/90 text-sm">
-                          <Users className="w-4 h-4" />
-                          <span>{currentClub.members} members</span>
                         </div>
                       )}
 
