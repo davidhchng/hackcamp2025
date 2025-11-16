@@ -1,23 +1,166 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion, useMotionValue, useTransform, AnimatePresence } from "motion/react";
-import { X, Heart, Star, MapPin, ArrowLeft, Users, Clock, Mail, Info, ChevronDown, Tag } from "lucide-react";
+import { X, Heart, Star, MapPin, ArrowLeft, Users, Clock, Mail, Info, ChevronDown, Tag, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { Progress } from "./ui/progress";
 import { clubs } from "../data/mockData";
 import { Club } from "../types";
 import { Link } from "react-router-dom";
+import { sortClubsWithChatGPT } from "../utils/chatgptApi";
+
+interface ProfileData {
+  adjectives: string[];
+  passions: string[];
+  major: string;
+  bio: string;
+  lookingFor: string;
+  genderPronouns?: string;
+}
+
+const loadingMessages = [
+  "✨ Matching your interests...",
+  "🎯 Finding perfect clubs for you...",
+  "🔍 Analyzing your passions...",
+  "💫 Discovering your ideal matches...",
+  "🌟 Crafting personalized recommendations...",
+  "🚀 Searching through amazing clubs...",
+  "🎨 Connecting you with like-minded people...",
+  "⚡ Almost there, just a moment...",
+];
 
 export function SwipePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [swipedClubs, setSwipedClubs] = useState<{ club: Club; liked: boolean }[]>([]);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [profile, setProfile] = useState<ProfileData | null>(null);
+  const [sortedClubs, setSortedClubs] = useState<Club[]>(clubs);
+  const [isLoadingAI, setIsLoadingAI] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [loadingMessage, setLoadingMessage] = useState(0);
+  const [useChatGPT, setUseChatGPT] = useState(() => {
+    // Always prioritize .env file key, then localStorage
+    const envKey = import.meta.env.VITE_OPENAI_API_KEY;
+    const localKey = localStorage.getItem('openai_api_key');
+    // Use .env key if available, otherwise check localStorage
+    return !!(envKey?.trim() || localKey?.trim());
+  });
+
+  // Listen for API key changes (prioritize .env file)
+  useEffect(() => {
+    const checkApiKey = () => {
+      // Always prioritize .env file key first
+      const envKey = import.meta.env.VITE_OPENAI_API_KEY;
+      const localKey = localStorage.getItem('openai_api_key');
+      // Use .env key if available, otherwise check localStorage
+      setUseChatGPT(!!(envKey?.trim() || localKey?.trim()));
+    };
+
+    // Check on mount
+    checkApiKey();
+
+    // Listen for storage changes (when API key is added/removed in localStorage)
+    // Note: .env changes require server restart, so we don't need to check for those
+    window.addEventListener('storage', checkApiKey);
+    
+    // Also check periodically (for same-tab updates to localStorage)
+    const interval = setInterval(checkApiKey, 2000);
+
+    return () => {
+      window.removeEventListener('storage', checkApiKey);
+      clearInterval(interval);
+    };
+  }, []);
   const [likedCount, setLikedCount] = useState(() => {
     const saved = localStorage.getItem("likedClubs");
     return saved ? JSON.parse(saved).length : 0;
   });
 
+  // Load profile from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem("alignu_profile");
+    if (saved) {
+      try {
+        setProfile(JSON.parse(saved));
+      } catch (e) {
+        console.error("Error parsing profile:", e);
+      }
+    }
+  }, []);
+
+  // Sort clubs based on profile match (with ChatGPT if enabled)
+  useEffect(() => {
+    if (!profile) {
+      setSortedClubs(clubs);
+      return;
+    }
+
+    const sortClubs = async () => {
+      // Always use ChatGPT if API key is available
+      if (useChatGPT) {
+        setIsLoadingAI(true);
+        setProgress(0);
+        
+        // Simulate progress and rotate messages
+        const progressInterval = setInterval(() => {
+          setProgress((prev) => {
+            if (prev >= 90) return prev; // Don't go to 100 until done
+            return prev + Math.random() * 15;
+          });
+        }, 200);
+
+        // Rotate loading messages
+        const messageInterval = setInterval(() => {
+          setLoadingMessage((prev) => (prev + 1) % loadingMessages.length);
+        }, 1500);
+
+        try {
+          const sorted = await sortClubsWithChatGPT(clubs, profile);
+          clearInterval(progressInterval);
+          clearInterval(messageInterval);
+          setProgress(100);
+          setLoadingMessage(loadingMessages.length - 1); // Show final message
+          setTimeout(() => {
+            setSortedClubs(sorted);
+            setIsLoadingAI(false);
+            setProgress(0);
+            setLoadingMessage(0);
+          }, 500);
+        } catch (error) {
+          clearInterval(progressInterval);
+          clearInterval(messageInterval);
+          console.error("ChatGPT API error:", error);
+          // Show error but still try to show clubs (unsorted)
+          setProgress(100);
+          setLoadingMessage(loadingMessages.length - 1);
+          setTimeout(() => {
+            // Show clubs in original order if API fails
+            setSortedClubs(clubs);
+            setIsLoadingAI(false);
+            setProgress(0);
+            setLoadingMessage(0);
+          }, 500);
+        }
+      } else {
+        // No API key available - show clubs in original order
+        setSortedClubs(clubs);
+      }
+    };
+
+    sortClubs();
+  }, [profile, useChatGPT]);
+
+  // Reset index when profile first loads (clubs get reordered)
+  const [hasResetForProfile, setHasResetForProfile] = useState(false);
+  useEffect(() => {
+    if (profile && !hasResetForProfile) {
+      setCurrentIndex(0);
+      setHasResetForProfile(true);
+    }
+  }, [profile, hasResetForProfile]);
+
   // Always call hooks - use safe fallback for currentClub
-  const currentClub = clubs[currentIndex] || clubs[0]; // fallback to prevent undefined
+  const currentClub = sortedClubs[currentIndex] || sortedClubs[0]; // fallback to prevent undefined
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-25, 25]);
   const opacity = useTransform(x, [-200, -100, 0, 100, 200], [0, 1, 1, 1, 0]);
@@ -27,7 +170,7 @@ export function SwipePage() {
   const likeOpacity = useTransform(x, [0, 50, 200], [0, 0.5, 1]);
   
   // Check if we're out of clubs
-  const noMoreClubs = currentIndex >= clubs.length;
+  const noMoreClubs = currentIndex >= sortedClubs.length;
 
   const handleSwipe = (direction: "left" | "right") => {
     if (noMoreClubs) return;
@@ -135,6 +278,94 @@ export function SwipePage() {
     );
   }
 
+  // Loading screen overlay
+  if (isLoadingAI) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center px-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="w-full max-w-md"
+        >
+          <div className="text-center space-y-6">
+            {/* Icon */}
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
+              className="flex justify-center"
+            >
+              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                >
+                  <Sparkles className="w-12 h-12 text-white" />
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Title */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+                Analyzing Your Profile
+              </h2>
+              <p className="text-gray-600">
+                Our AI is finding the perfect clubs for you...
+              </p>
+            </motion.div>
+
+            {/* Progress Bar */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="space-y-3"
+            >
+              <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden shadow-inner">
+                <motion.div
+                  className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"
+                  initial={{ width: "0%" }}
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                />
+              </div>
+              <p className="text-sm text-gray-500">
+                {Math.round(progress)}% complete
+              </p>
+            </motion.div>
+
+            {/* Loading steps */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="space-y-2 pt-4 min-h-[24px]"
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={loadingMessage}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-sm text-gray-600 font-medium"
+                >
+                  {loadingMessages[loadingMessage]}
+                </motion.div>
+              </AnimatePresence>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -151,15 +382,25 @@ export function SwipePage() {
       {/* Swipe Counter */}
       <div className="text-center mb-4">
         <p className="text-gray-600">
-          {currentIndex + 1} / {clubs.length}
+          {currentIndex + 1} / {sortedClubs.length}
         </p>
+        {profile && useChatGPT && (
+          <p className="text-xs text-gray-400 mt-1">
+            ✨ AI-powered recommendations
+          </p>
+        )}
+        {profile && !useChatGPT && (
+          <p className="text-xs text-yellow-600 mt-1">
+            ⚠️ AI recommendations unavailable - showing all clubs
+          </p>
+        )}
       </div>
 
       {/* Card Stack */}
       <div className="flex justify-center items-start px-6 py-8">
         <div className="relative w-full max-w-md" style={{ height: "600px" }}>
           {/* Background cards */}
-          {clubs.slice(currentIndex + 1, currentIndex + 3).map((club, idx) => (
+          {sortedClubs.slice(currentIndex + 1, currentIndex + 3).map((club, idx) => (
             <div
               key={club.id}
               className="absolute inset-0 rounded-3xl shadow-xl"
