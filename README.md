@@ -1,9 +1,9 @@
-# AlignU - UBC Club Finder
+# AlignU - Your Hub for Everything UBC Clubs
 
 
 
 <div align="center">
-  <h3>Discover your perfect club at UBC. Swipe through clubs and find your community.</h3>
+  <h3>Discover your perfect club at UBC. Swipe your way to community.</h3>
   <p>Built with React, TypeScript, and AI-powered recommendations</p>
 </div>
 
@@ -152,9 +152,24 @@ The events database comes from and is updated with the UBC AMS Clubs Directory, 
 - **Routing:** React Router (HashRouter for GitHub Pages)
 - **State Management:** React Hooks + localStorage
 
-## Key Features Explained
+## Key Features and User Process Explained
+
+### Profile System
+- Create a comprehensive profile with:
+  - Bio and personal description
+  - Major selection
+  - Adjectives (words that describe you)
+  - Passions (your interests)
+  - What you're looking for
+  - Gender pronouns (optional)
+- Save and reset profile functionality
+- Profile data used for personalized recommendations
+
+<img width="942" height="518" alt="image" src="https://github.com/user-attachments/assets/17957601-0b5d-4088-83a4-5f3bee4e18d4" />
+
 
 ### Swipe Interface
+- View prioritized clubs, based off of your profile section
 - Swipe right (or click the heart button) to like a club
 - Swipe left (or click the X button) to pass
 - View detailed information by clicking on the card
@@ -171,18 +186,6 @@ The events database comes from and is updated with the UBC AMS Clubs Directory, 
 <img width="1069" height="685" alt="Screenshot 2025-11-16 at 10 45 31 AM" src="https://github.com/user-attachments/assets/0eb5822f-c27f-4577-aace-9be104b94a37" />
 
 
-### Profile System
-- Create a comprehensive profile with:
-  - Bio and personal description
-  - Major selection
-  - Adjectives (words that describe you)
-  - Passions (your interests)
-  - What you're looking for
-  - Gender pronouns (optional)
-- Save and reset profile functionality
-- Profile data used for personalized recommendations
-
-<img width="942" height="518" alt="image" src="https://github.com/user-attachments/assets/17957601-0b5d-4088-83a4-5f3bee4e18d4" />
 
 
 
