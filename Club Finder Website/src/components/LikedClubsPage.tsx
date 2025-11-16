@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Heart, MapPin, Star, Users, Trash2, Clock, Mail, Info, ChevronDown, Instagram } from "lucide-react";
+import { ArrowLeft, Heart, Trash2, Clock, Mail, Info, ChevronDown, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -145,16 +145,6 @@ export function LikedClubsPage() {
                             transition={{ delay: index * 0.05 + 0.1 }}
                           >
                             <h3 className="text-white mb-1">{club.name}</h3>
-                            <div className="flex items-center gap-3 text-white/90 text-sm">
-                              <div className="flex items-center gap-1">
-                                <MapPin className="w-3 h-3" />
-                                <span>{club.location}</span>
-                              </div>
-                              <div className="flex items-center gap-1">
-                                <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-                                <span>{club.rating}</span>
-                              </div>
-                            </div>
                           </motion.div>
                         </div>
                         
@@ -171,18 +161,6 @@ export function LikedClubsPage() {
                               </Badge>
                             ))}
                           </div>
-
-                          {/* Additional Info */}
-                          {club.members && (
-                            <motion.div 
-                              className="flex items-center gap-2 text-gray-600 text-sm"
-                              whileHover={{ x: 3 }}
-                              transition={{ type: "spring", stiffness: 400 }}
-                            >
-                              <Users className="w-4 h-4 text-blue-600" />
-                              <span>{club.members} members</span>
-                            </motion.div>
-                          )}
 
                           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                             <Button 
