@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, useMotionValue, useTransform, AnimatePresence } from "motion/react";
-import { X, Heart, Star, MapPin, ArrowLeft, Users, Clock, Mail, Info, ChevronDown, Tag, Sparkles, Loader2 } from "lucide-react";
+import { X, Heart, Star, MapPin, ArrowLeft, Users, Clock, Mail, Info, ChevronDown, Tag, Sparkles, Loader2, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Progress } from "./ui/progress";
@@ -549,10 +549,15 @@ export function SwipePage() {
 
                       {/* Contact */}
                       {currentClub.contact && (
-                        <div className="flex items-center gap-2 text-white/90 text-sm">
-                          <Mail className="w-4 h-4" />
-                          <span>{currentClub.contact}</span>
-                        </div>
+                        <a
+                          href={currentClub.contact.startsWith('http') ? currentClub.contact : `https://www.instagram.com/${currentClub.contact.replace('@', '').replace('https://www.instagram.com/', '').replace('https://instagram.com/', '')}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-white/90 text-sm hover:text-white transition-colors"
+                        >
+                          <Instagram className="w-4 h-4" />
+                          <span className="underline">Follow on Instagram</span>
+                        </a>
                       )}
                     </motion.div>
                   )}
